@@ -7,7 +7,7 @@ function ListItem(props) {
   };
 
   return (
-    <li style={style} key={id}>
+    <li style={style}>
       <input
         onChange={() => props.toggleCompletion(id, area)}
         type="checkbox"
