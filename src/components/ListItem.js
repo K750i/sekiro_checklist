@@ -13,7 +13,7 @@ function ListItem(props) {
         type="checkbox"
         checked={done}
       />
-      {task}
+      <span dangerouslySetInnerHTML={(() => ({__html: task}))()} />
     </li>
   );
 }
