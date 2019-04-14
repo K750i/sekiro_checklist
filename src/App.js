@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import AreaContainer from './components/AreaContainer';
 import ProfileForm from './components/ProfileForm';
-import dataObject from './assets/data';
+import dataStr from './assets/data';
 import './App.css';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
-
-    this.tempObj = {...dataObject};
 
     if (localStorage.getItem('currentProfile')) {
       this.currentProfile = localStorage.getItem('currentProfile');
@@ -20,7 +18,7 @@ export default class App extends Component {
       };
     } else {
       this.currentProfile = 'default';
-      this.state = {data: {...this.tempObj.default}, completionStatus: {}};
+      this.state = {data: JSON.parse(dataStr).default, completionStatus: {}};
     }
   }
 
@@ -49,14 +47,18 @@ export default class App extends Component {
 
     this.setState({data: newState});
 
+    this.persistState();
+
+    this.updateTaskCounter();
+  };
+
+  persistState() {
     localStorage.setItem(
       'appStateSource',
       JSON.stringify(this.storageUpdateHelper()),
     );
     localStorage.setItem('currentProfile', this.currentProfile);
-
-    this.updateTaskCounter();
-  };
+  }
 
   storageUpdateHelper = () => {
     return {
@@ -68,17 +70,18 @@ export default class App extends Component {
   addProfile = name => {
     this.currentProfile = name;
     // reset state to original
-    console.log(this.tempObj.default);
-    this.setState({data: this.tempObj.default}, () => {
+    this.setState({data: JSON.parse(dataStr).default}, () => {
       // have to do it with callback because setState is asynchronous
       // and may not have been called before localStorage.setItem()
       // console.log(this.state);
       // console.log('dataobj', dataObject['default']);
+      this.persistState();
       localStorage.setItem('currentProfile', this.currentProfile);
       localStorage.setItem(
         'appStateSource',
         JSON.stringify(this.storageUpdateHelper()),
       );
+
       this.updateTaskCounter();
       this.forceUpdate();
     });
@@ -92,7 +95,10 @@ export default class App extends Component {
           this.currentProfile
         ],
       },
-      () => this.updateTaskCounter(),
+      () => {
+        this.updateTaskCounter();
+        this.persistState();
+      },
     );
   };
 

@@ -29,8 +29,20 @@ const dataObject = {
         area: 'Area2_1',
       },
       {id: 'a2.1.2', task: 'Talk to Emma', done: false, area: 'Area2_1'},
+      {
+        id: 'a2.1.3',
+        task: "Rest at the Sculptor's Idol",
+        done: false,
+        area: 'Area2_1',
+      },
+      {
+        id: 'a2.1.4',
+        task: 'Talk to Hanbei the Undying',
+        done: false,
+        area: 'Area2_1',
+      },
     ],
   },
 };
 
-export default dataObject;
+export default JSON.stringify(dataObject);
