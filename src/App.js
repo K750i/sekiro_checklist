@@ -9,7 +9,6 @@ export default class App extends Component {
     super(props);
 
     this.tempObj = {...dataObject};
-    this.completionStatus = {};
 
     if (localStorage.getItem('currentProfile')) {
       this.currentProfile = localStorage.getItem('currentProfile');
@@ -17,25 +16,26 @@ export default class App extends Component {
         data: JSON.parse(localStorage.getItem('appStateSource'))[
           this.currentProfile
         ],
+        completionStatus: {},
       };
     } else {
       this.currentProfile = 'default';
-      this.state = {data: {...this.tempObj['default']}};
+      this.state = {data: {...this.tempObj.default}, completionStatus: {}};
     }
-
-    this.updateTaskCounter();
   }
 
   updateTaskCounter() {
+    const completed = {};
+
     Object.keys(this.state.data).forEach(area => {
-      this.completionStatus[area] = this.state.data[area].reduce(
+      completed[area] = this.state.data[area].reduce(
         ([done, total], v) => [v.done ? ++done : done, ++total],
         [0, 0],
       );
     });
 
-    this.forceUpdate();
-    console.log(this.completionStatus);
+    this.setState({completionStatus: completed});
+    // this.forceUpdate();
   }
 
   toggleCompletion = (id, area) => {
@@ -55,11 +55,7 @@ export default class App extends Component {
     );
     localStorage.setItem('currentProfile', this.currentProfile);
 
-    // Calculate completion status for the Area of the clicked checkbox
-    this.completionStatus[area] = this.state.data[area].reduce(
-      ([done, total], v) => [v.done ? ++done : done, ++total],
-      [0, 0],
-    );
+    this.updateTaskCounter();
   };
 
   storageUpdateHelper = () => {
@@ -72,7 +68,8 @@ export default class App extends Component {
   addProfile = name => {
     this.currentProfile = name;
     // reset state to original
-    this.setState({data: this.tempObj['default']}, () => {
+    console.log(this.tempObj.default);
+    this.setState({data: this.tempObj.default}, () => {
       // have to do it with callback because setState is asynchronous
       // and may not have been called before localStorage.setItem()
       // console.log(this.state);
@@ -82,6 +79,7 @@ export default class App extends Component {
         'appStateSource',
         JSON.stringify(this.storageUpdateHelper()),
       );
+      this.updateTaskCounter();
       this.forceUpdate();
     });
   };
@@ -97,6 +95,10 @@ export default class App extends Component {
       () => this.updateTaskCounter(),
     );
   };
+
+  componentDidMount() {
+    this.updateTaskCounter();
+  }
 
   render() {
     return (
@@ -115,14 +117,14 @@ export default class App extends Component {
           <AreaContainer
             areaObjectives={this.state.data.Area1_1}
             areaName="Ashina Reservoir"
-            status={this.completionStatus.Area1_1}
+            status={this.state.completionStatus.Area1_1}
             toggleCompletion={this.toggleCompletion}
           />
           <hr />
           <AreaContainer
             areaObjectives={this.state.data.Area2_1}
             areaName="Dilapidated Temple"
-            status={this.completionStatus.Area2_1}
+            status={this.state.completionStatus.Area2_1}
             toggleCompletion={this.toggleCompletion}
           />
         </main>

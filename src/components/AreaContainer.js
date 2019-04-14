@@ -7,7 +7,7 @@ function AreaContainer(props) {
   return (
     <section>
       <h2>
-        {areaName}
+        {areaName}&nbsp;
         <AreaCompletionTracker status={status} />
       </h2>
       <ul>

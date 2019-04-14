@@ -12,8 +12,13 @@ function ListItem(props) {
         onChange={() => props.toggleCompletion(id, area)}
         type="checkbox"
         checked={done}
+        id={id}
       />
-      <span dangerouslySetInnerHTML={(() => ({__html: task}))()} />
+      &nbsp;
+      <label
+        htmlFor={id}
+        dangerouslySetInnerHTML={(() => ({__html: task}))()}
+      />
     </li>
   );
 }

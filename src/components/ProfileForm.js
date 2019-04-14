@@ -51,7 +51,7 @@ class ProfileForm extends Component {
       <section>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Selected Profile
+            Selected Profile &nbsp;
             <select
               value={this.state.selectedProfile}
               onChange={this.handleSelect}>
@@ -63,8 +63,10 @@ class ProfileForm extends Component {
                 );
               })}
             </select>
+            &nbsp;
           </label>
           <input type="text" ref={this.profileInput} disabled />
+          &nbsp;
           <button type="button" onClick={this.handleAddClick}>
             Add
           </button>
