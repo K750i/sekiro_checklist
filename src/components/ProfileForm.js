@@ -4,26 +4,46 @@ class ProfileForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: this.props.profile,
-      profileInputEnabled: false,
+      profiles: [],
+      selectedProfile: '',
     };
     this.profileInput = React.createRef();
   }
 
+  componentDidMount() {
+    this.setState({
+      profiles: this.props.profiles,
+      selectedProfile: this.props.selectedProfile,
+    });
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    return {profiles: props.profiles, selectedProfile: props.selectedProfile};
+  }
+
   handleAddClick = e => {
-    e.preventDefault();
     this.profileInput.current.disabled = false;
-    this.profileInput.current.select();
+    this.profileInput.current.focus();
   };
 
-  handleTextInput = e => {
-    this.setState({profile: e.target.value});
+  handleSelect = e => {
+    this.props.changeProfile(e.target.value);
   };
+
+  // handleTextInput = e => {
+  //   this.setState({profile: e.target.value});
+  // };
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.addProfile(this.state.profile);
-    this.profileInput.current.disabled = true;
+    const newProfile = this.profileInput.current.value;
+    if (this.state.profiles.includes(newProfile)) {
+      alert('Profile already exist');
+    } else {
+      this.props.addProfile(newProfile);
+      this.profileInput.current.value = '';
+      this.profileInput.current.disabled = true;
+    }
   };
 
   render() {
@@ -32,15 +52,19 @@ class ProfileForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Selected Profile
-            <input
-              type="text"
-              ref={this.profileInput}
-              name="profile"
-              value={this.state.profile}
-              onChange={this.handleTextInput}
-              disabled
-            />
+            <select
+              value={this.state.selectedProfile}
+              onChange={this.handleSelect}>
+              {this.state.profiles.map(profile => {
+                return (
+                  <option value={profile} key={profile}>
+                    {profile}
+                  </option>
+                );
+              })}
+            </select>
           </label>
+          <input type="text" ref={this.profileInput} disabled />
           <button type="button" onClick={this.handleAddClick}>
             Add
           </button>

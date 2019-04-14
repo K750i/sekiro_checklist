@@ -1,15 +1,20 @@
 import React from 'react';
 import ListItem from './ListItem';
+import AreaCompletionTracker from './AreaCompletionTracker';
 
 function AreaContainer(props) {
+  const {areaName, areaObjectives, status, toggleCompletion} = props;
   return (
     <section>
-      <h2>{props.areaName}</h2>
+      <h2>
+        {areaName}
+        <AreaCompletionTracker status={status} />
+      </h2>
       <ul>
-        {props.areaObjectives.map(item => (
+        {areaObjectives.map(item => (
           <ListItem
             key={item.id}
-            toggleCompletion={props.toggleCompletion}
+            toggleCompletion={toggleCompletion}
             item={item}
           />
         ))}
