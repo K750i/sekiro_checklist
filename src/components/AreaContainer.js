@@ -4,6 +4,7 @@ import AreaCompletionTracker from './AreaCompletionTracker';
 
 function AreaContainer(props) {
   const {areaName, areaObjectives, status, toggleCompletion} = props;
+  console.log(areaObjectives);
   return (
     <section>
       <h2>

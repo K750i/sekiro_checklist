@@ -9,10 +9,22 @@ export default class App extends Component {
     super(props);
 
     if (localStorage.getItem('currentProfile')) {
+      const mergedObj = {};
+      const parsedSourceObj = JSON.parse(dataStr).default;
+      const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[
+        localStorage.getItem('currentProfile')
+      ];
+
+      // merge the saved object with the full object
+      Object.keys(parsedSourceObj).forEach(area => {
+        mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
+          ...obj,
+          ...loadedObj[area][i],
+        }));
+      });
+
       this.state = {
-        data: JSON.parse(localStorage.getItem('appStateSource'))[
-          localStorage.getItem('currentProfile')
-        ],
+        data: mergedObj,
         currentProfile: localStorage.getItem('currentProfile'),
         completionStatus: {},
       };
@@ -63,10 +75,23 @@ export default class App extends Component {
     localStorage.setItem('currentProfile', this.state.currentProfile);
   }
 
+  // storageUpdateHelper = () => {
+  //   return {
+  //     ...JSON.parse(localStorage.getItem('appStateSource')),
+  //     [this.state.currentProfile]: this.state.data,
+  //   };
+  // };
+
   storageUpdateHelper = () => {
+    const doneObj = {};
+
+    Object.keys(this.state.data).forEach(area => {
+      doneObj[area] = this.state.data[area].map(obj => ({done: obj.done}));
+    });
+
     return {
       ...JSON.parse(localStorage.getItem('appStateSource')),
-      [this.state.currentProfile]: this.state.data,
+      [this.state.currentProfile]: doneObj,
     };
   };
 
@@ -79,7 +104,7 @@ export default class App extends Component {
         // and may not have been called before localStorage.setItem()
         // console.log(this.state);
         // console.log('dataobj', dataObject['default']);
-        this.persistState();
+        // this.persistState();
         localStorage.setItem('currentProfile', name);
         localStorage.setItem(
           'appStateSource',
@@ -93,12 +118,26 @@ export default class App extends Component {
   };
 
   changeProfile = name => {
+    // these are duplicate, bad codes
+    const mergedObj = {};
+    const parsedSourceObj = JSON.parse(dataStr).default;
+    const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[name];
+
+    // merge the saved object with the full object
+    Object.keys(parsedSourceObj).forEach(area => {
+      mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
+        ...obj,
+        ...loadedObj[area][i],
+      }));
+    });
+
     this.setState(
       {
-        data: JSON.parse(localStorage.getItem('appStateSource'))[name],
+        data: mergedObj,
         currentProfile: name,
       },
       () => {
+        console.log('current state', this.state.data);
         this.updateTaskCounter();
         this.persistState();
       },
