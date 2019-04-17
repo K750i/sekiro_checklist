@@ -21,9 +21,13 @@ class ProfileForm extends Component {
     return {profiles: props.profiles, selectedProfile: props.selectedProfile};
   }
 
-  handleAddClick = e => {
+  handleAddClick = () => {
     this.profileInput.current.disabled = false;
     this.profileInput.current.focus();
+  };
+
+  handleDelete = () => {
+    this.props.deleteProfile(this.state.selectedProfile);
   };
 
   handleSelect = e => {
@@ -69,6 +73,9 @@ class ProfileForm extends Component {
           &nbsp;
           <button type="button" onClick={this.handleAddClick}>
             Add
+          </button>
+          <button type="button" onClick={this.handleDelete}>
+            Delete Profile
           </button>
         </form>
       </section>

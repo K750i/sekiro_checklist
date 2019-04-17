@@ -2,9 +2,7 @@ import React from 'react';
 import ListItem from './ListItem';
 import AreaCompletionTracker from './AreaCompletionTracker';
 
-function AreaContainer(props) {
-  const {areaName, areaObjectives, status, toggleCompletion} = props;
-  console.log(areaObjectives);
+function AreaContainer({areaName, areaObjectives, status, toggleCompletion}) {
   return (
     <section>
       <h2>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import AreaContainer from './components/AreaContainer';
 import ProfileForm from './components/ProfileForm';
 import dataStr from './assets/data';
+import {areas} from './assets/data';
 import './App.css';
 
 export default class App extends Component {
@@ -9,29 +10,31 @@ export default class App extends Component {
     super(props);
 
     if (localStorage.getItem('currentProfile')) {
-      const mergedObj = {};
-      const parsedSourceObj = JSON.parse(dataStr).default;
-      const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[
-        localStorage.getItem('currentProfile')
-      ];
+      // const mergedObj = {};
+      // const parsedSourceObj = JSON.parse(dataStr).default;
+      // const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[
+      //   localStorage.getItem('currentProfile')
+      // ];
 
-      // merge the saved object with the full object
-      Object.keys(parsedSourceObj).forEach(area => {
-        mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
-          ...obj,
-          ...loadedObj[area][i],
-        }));
-      });
+      // // merge the saved object with the full object
+      // Object.keys(parsedSourceObj).forEach(area => {
+      //   mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
+      //     ...obj,
+      //     ...loadedObj[area][i],
+      //   }));
+      // });
 
       this.state = {
-        data: mergedObj,
+        data: this.loadMergeData(localStorage.getItem('currentProfile')),
         currentProfile: localStorage.getItem('currentProfile'),
+        areas: areas,
         completionStatus: {},
       };
     } else {
       this.state = {
         data: JSON.parse(dataStr).default,
         completionStatus: {},
+        areas: areas,
         currentProfile: 'default',
       };
     }
@@ -95,6 +98,24 @@ export default class App extends Component {
     };
   };
 
+  loadMergeData = profileName => {
+    const mergedObj = {};
+    const parsedSourceObj = JSON.parse(dataStr).default;
+    const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[
+      profileName
+    ];
+
+    // merge the saved object with the full object
+    Object.keys(parsedSourceObj).forEach(area => {
+      mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
+        ...obj,
+        ...loadedObj[area][i],
+      }));
+    });
+
+    return mergedObj;
+  };
+
   addProfile = name => {
     // reset state to original
     this.setState(
@@ -117,27 +138,50 @@ export default class App extends Component {
     );
   };
 
+  deleteProfile = name => {
+    const stateSource = JSON.parse(localStorage.getItem('appStateSource'));
+
+    if (!stateSource) return;
+    // if (Object.keys(stateSource.length === 0)) return;
+
+    // create a new obj without the selected profile to re-save into localStorage
+    const newStateSource = Object.keys(stateSource).reduce((o, v) => {
+      if (v !== name) {
+        o[v] = stateSource[v];
+      }
+      return o;
+    }, {});
+    localStorage.setItem('appStateSource', JSON.stringify(newStateSource));
+
+    // if there is remaining profile, load the last one from the list
+    const list = Object.keys(newStateSource);
+    if (list.length >= 1) {
+      this.changeProfile(list[list.length - 1]);
+    } else {
+      // otherwise load a default profile
+      console.log('reach here');
+      this.setState(
+        {
+          data: JSON.parse(dataStr).default,
+          completionStatus: {},
+          areas: areas,
+          currentProfile: 'default',
+        },
+        () => {
+          this.persistState();
+          this.forceUpdate();
+        },
+      );
+    }
+  };
+
   changeProfile = name => {
-    // these are duplicate, bad codes
-    const mergedObj = {};
-    const parsedSourceObj = JSON.parse(dataStr).default;
-    const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[name];
-
-    // merge the saved object with the full object
-    Object.keys(parsedSourceObj).forEach(area => {
-      mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
-        ...obj,
-        ...loadedObj[area][i],
-      }));
-    });
-
     this.setState(
       {
-        data: mergedObj,
+        data: this.loadMergeData(name),
         currentProfile: name,
       },
       () => {
-        console.log('current state', this.state.data);
         this.updateTaskCounter();
         this.persistState();
       },
@@ -149,6 +193,19 @@ export default class App extends Component {
   }
 
   render() {
+    console.log(this.state.areas);
+    const areaSection = this.state.areas.map(area => {
+      return (
+        <AreaContainer
+          areaObjectives={this.state.data[area.id]}
+          areaName={area.name}
+          status={this.state.completionStatus[area.id]}
+          toggleCompletion={this.toggleCompletion}
+          key={area.id}
+        />
+      );
+    });
+
     return (
       <section>
         <ProfileForm
@@ -160,22 +217,9 @@ export default class App extends Component {
           selectedProfile={this.state.currentProfile}
           addProfile={this.addProfile}
           changeProfile={this.changeProfile}
+          deleteProfile={this.deleteProfile}
         />
-        <main>
-          <AreaContainer
-            areaObjectives={this.state.data.Area1_1}
-            areaName="Ashina Reservoir"
-            status={this.state.completionStatus.Area1_1}
-            toggleCompletion={this.toggleCompletion}
-          />
-          <hr />
-          <AreaContainer
-            areaObjectives={this.state.data.Area2_1}
-            areaName="Dilapidated Temple"
-            status={this.state.completionStatus.Area2_1}
-            toggleCompletion={this.toggleCompletion}
-          />
-        </main>
+        <main>{areaSection}</main>
       </section>
     );
   }

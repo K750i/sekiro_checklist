@@ -51,4 +51,17 @@ const dataObject = {
   },
 };
 
+export const areas = [
+  {
+    id: 'Area1_1',
+    name: 'Ashina Reservoir',
+    link: '#ashinares',
+  },
+  {
+    id: 'Area2_1',
+    name: 'Dilapidated Temple',
+    link: '#temple',
+  },
+];
+
 export default JSON.stringify(dataObject);

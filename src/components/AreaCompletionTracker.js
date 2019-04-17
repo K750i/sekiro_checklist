@@ -1,8 +1,8 @@
 import React from 'react';
 
-function AreaCompletionTracker(props) {
-  if (props.status) {
-    const [done, total] = props.status;
+function AreaCompletionTracker({status}) {
+  if (status) {
+    const [done, total] = status;
     return (
       <span>
         [{done}/{total}]
