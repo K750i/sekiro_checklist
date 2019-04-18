@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
 import ProfileForm from './components/ProfileForm';
 import dataStr from './assets/data';
@@ -107,10 +108,14 @@ export default class App extends Component {
 
     // merge the saved object with the full object
     Object.keys(parsedSourceObj).forEach(area => {
-      mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
-        ...obj,
-        ...loadedObj[area][i],
-      }));
+      mergedObj[area] = parsedSourceObj[area].map((obj, i) => {
+        const temp = loadedObj[area];
+        if (temp) {
+          return {...obj, ...temp[i]};
+        } else {
+          return {...obj};
+        }
+      });
     });
 
     return mergedObj;
@@ -159,7 +164,6 @@ export default class App extends Component {
       this.changeProfile(list[list.length - 1]);
     } else {
       // otherwise load a default profile
-      console.log('reach here');
       this.setState(
         {
           data: JSON.parse(dataStr).default,
@@ -193,7 +197,17 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.areas);
+    const areaList = this.state.areas.map(area => {
+      return (
+        <IndexArea
+          key={area.id}
+          areaName={area.name}
+          link={area.link}
+          status={this.state.completionStatus[area.id]}
+        />
+      );
+    });
+
     const areaSection = this.state.areas.map(area => {
       return (
         <AreaContainer
@@ -219,6 +233,9 @@ export default class App extends Component {
           changeProfile={this.changeProfile}
           deleteProfile={this.deleteProfile}
         />
+        <section id="area-list">
+          <ul>{areaList}</ul>
+        </section>
         <main>{areaSection}</main>
       </section>
     );

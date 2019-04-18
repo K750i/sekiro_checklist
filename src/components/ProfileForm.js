@@ -21,13 +21,19 @@ class ProfileForm extends Component {
     return {profiles: props.profiles, selectedProfile: props.selectedProfile};
   }
 
-  handleAddClick = () => {
-    this.profileInput.current.disabled = false;
-    this.profileInput.current.focus();
-  };
+  // handleAddClick = () => {
+  //   if (this.profileInput.current.value.trim() === '') return;
+  // };
 
   handleDelete = () => {
-    this.props.deleteProfile(this.state.selectedProfile);
+    if (
+      window.confirm(
+        `Are you sure you want to delete the profile named ${
+          this.state.selectedProfile
+        }?`,
+      )
+    )
+      this.props.deleteProfile(this.state.selectedProfile);
   };
 
   handleSelect = e => {
@@ -40,23 +46,29 @@ class ProfileForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const newProfile = this.profileInput.current.value;
+    const newProfile = this.profileInput.current.value.trim();
+    if (newProfile === '') {
+      alert('Invalid profile name');
+      this.profileInput.current.value = '';
+      return;
+    }
+
     if (this.state.profiles.includes(newProfile)) {
       alert('Profile already exist');
     } else {
       this.props.addProfile(newProfile);
       this.profileInput.current.value = '';
-      this.profileInput.current.disabled = true;
     }
   };
 
   render() {
     return (
-      <section>
+      <section id="profile">
         <form onSubmit={this.handleSubmit}>
           <label>
             Selected Profile &nbsp;
             <select
+              style={this.selectStyle}
               value={this.state.selectedProfile}
               onChange={this.handleSelect}>
               {this.state.profiles.map(profile => {
@@ -69,18 +81,47 @@ class ProfileForm extends Component {
             </select>
             &nbsp;
           </label>
-          <input type="text" ref={this.profileInput} disabled />
+          <input
+            style={this.inputStyle}
+            type="text"
+            ref={this.profileInput}
+            placeholder="New Profile"
+          />
           &nbsp;
-          <button type="button" onClick={this.handleAddClick}>
+          <button style={this.buttonStyle} type="submit">
             Add
           </button>
-          <button type="button" onClick={this.handleDelete}>
+          &nbsp;
+          <button
+            style={this.buttonStyle}
+            type="button"
+            onClick={this.handleDelete}>
             Delete Profile
           </button>
         </form>
       </section>
     );
   }
+
+  selectStyle = {
+    backgroundColor: 'transparent',
+    borderRadius: '4px',
+    padding: '5px',
+    maxWidth: '10%',
+  };
+
+  inputStyle = {
+    borderRadius: '4px',
+    border: 'none',
+    padding: '6px',
+    width: '20%',
+  };
+
+  buttonStyle = {
+    borderRadius: '3px',
+    padding: '5px',
+    border: 'none',
+  };
 }
 
 export default ProfileForm;

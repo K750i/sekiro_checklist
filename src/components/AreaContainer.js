@@ -4,7 +4,7 @@ import AreaCompletionTracker from './AreaCompletionTracker';
 
 function AreaContainer({areaName, areaObjectives, status, toggleCompletion}) {
   return (
-    <section>
+    <section id="area">
       <h2>
         {areaName}&nbsp;
         <AreaCompletionTracker status={status} />

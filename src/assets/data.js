@@ -41,11 +41,81 @@ const dataObject = {
         done: false,
         area: 'Area2_1',
       },
+    ],
+    Area3_1: [
       {
-        id: 'a2.1.5',
-        task: 'Testing',
+        id: 'a3.1.1',
+        task: "Unlock Sculptor's Idol Travel",
         done: false,
-        area: 'Area2_1',
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.2',
+        task: 'Find Loaded Shuriken materials',
+        done: false,
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.3',
+        task: 'Defeat General Naomori Kawarada',
+        done: false,
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.4',
+        task: 'Get Prayer Bead and Gourd Seed',
+        done: false,
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.5',
+        task: 'Obtain Bundled Jizo Statue',
+        done: false,
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.6',
+        task: "Obtain Young Lord's Bell Charm",
+        done: false,
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.7',
+        task: "Find Crow's Bed Memorial Mob",
+        done: false,
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.8',
+        task: 'Find your first Recollection (phantom conversation)',
+        done: false,
+        area: 'Area3_1',
+      },
+      {
+        id: 'a3.1.9',
+        task: 'Find Anayama the Peddler',
+        done: false,
+        area: 'Area3_1',
+      },
+    ],
+    Area4_1: [
+      {
+        id: 'a4.1.1',
+        task: 'Talk to the NPC to learn more about your lost memory',
+        done: false,
+        area: 'Area4_1',
+      },
+      {
+        id: 'a4.1.2',
+        task: 'Find your first Treasure Carp',
+        done: false,
+        area: 'Area4_1',
+      },
+      {
+        id: 'a4.1.3',
+        task: 'Meet Pot Noble Harunaga',
+        done: false,
+        area: 'Area4_1',
       },
     ],
   },
@@ -61,6 +131,16 @@ export const areas = [
     id: 'Area2_1',
     name: 'Dilapidated Temple',
     link: '#temple',
+  },
+  {
+    id: 'Area3_1',
+    name: 'Ashina Outskirts',
+    link: '#ashinaout',
+  },
+  {
+    id: 'Area4_1',
+    name: 'Hirata Estate',
+    link: '#hirataestate',
   },
 ];
 
