@@ -4,26 +4,17 @@ import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
 import dataStr from './assets/data';
 import {areas} from './assets/data';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Alert from 'react-bootstrap/Alert';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
 
     if (localStorage.getItem('currentProfile')) {
-      // const mergedObj = {};
-      // const parsedSourceObj = JSON.parse(dataStr).default;
-      // const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[
-      //   localStorage.getItem('currentProfile')
-      // ];
-
-      // // merge the saved object with the full object
-      // Object.keys(parsedSourceObj).forEach(area => {
-      //   mergedObj[area] = parsedSourceObj[area].map((obj, i) => ({
-      //     ...obj,
-      //     ...loadedObj[area][i],
-      //   }));
-      // });
-
       this.state = {
         data: this.loadMergeData(localStorage.getItem('currentProfile')),
         currentProfile: localStorage.getItem('currentProfile'),
@@ -51,7 +42,6 @@ export default class App extends Component {
     });
 
     this.setState({completionStatus: completed});
-    // this.forceUpdate();
   }
 
   toggleCompletion = (id, area) => {
@@ -77,13 +67,6 @@ export default class App extends Component {
     );
     localStorage.setItem('currentProfile', this.state.currentProfile);
   }
-
-  // storageUpdateHelper = () => {
-  //   return {
-  //     ...JSON.parse(localStorage.getItem('appStateSource')),
-  //     [this.state.currentProfile]: this.state.data,
-  //   };
-  // };
 
   storageUpdateHelper = () => {
     const doneObj = {};
@@ -125,11 +108,6 @@ export default class App extends Component {
     this.setState(
       {data: JSON.parse(dataStr).default, currentProfile: name},
       () => {
-        // have to do it with callback because setState is asynchronous
-        // and may not have been called before localStorage.setItem()
-        // console.log(this.state);
-        // console.log('dataobj', dataObject['default']);
-        // this.persistState();
         localStorage.setItem('currentProfile', name);
         localStorage.setItem(
           'appStateSource',
@@ -146,8 +124,6 @@ export default class App extends Component {
     const stateSource = JSON.parse(localStorage.getItem('appStateSource'));
 
     if (!stateSource) return;
-    // if (Object.keys(stateSource.length === 0)) return;
-
     // create a new obj without the selected profile to re-save into localStorage
     const newStateSource = Object.keys(stateSource).reduce((o, v) => {
       if (v !== name) {
@@ -212,6 +188,7 @@ export default class App extends Component {
         <AreaContainer
           areaObjectives={this.state.data[area.id]}
           areaName={area.name}
+          link={area.link}
           status={this.state.completionStatus[area.id]}
           toggleCompletion={this.toggleCompletion}
           key={area.id}
@@ -232,10 +209,38 @@ export default class App extends Component {
           changeProfile={this.changeProfile}
           deleteProfile={this.deleteProfile}
         />
-        <section id="area-list">
-          <ul>{areaList}</ul>
-        </section>
-        <main>{areaSection}</main>
+        <Container>
+          <Jumbotron className="mt-4">
+            <Container>
+              <Row>
+                <Col>
+                  <h1>Completion Checklist</h1>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <p>
+                    This is a completion checklist for Sekiro&trade; Shadows Die
+                    Twice. This checklist is based on Fextralife's Game Progress
+                    Route which presents a recommended progression path through
+                    the game.
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col md="auto">
+                  <Alert variant="danger">Spoiler Alert!</Alert>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ul>{areaList}</ul>
+                </Col>
+              </Row>
+            </Container>
+          </Jumbotron>
+          <main>{areaSection}</main>
+        </Container>
       </section>
     );
   }

@@ -2,13 +2,19 @@ import React from 'react';
 import ListItem from './ListItem';
 import AreaCompletionTracker from './AreaCompletionTracker';
 
-function AreaContainer({areaName, areaObjectives, status, toggleCompletion}) {
+function AreaContainer({
+  areaName,
+  link,
+  areaObjectives,
+  status,
+  toggleCompletion,
+}) {
   return (
-    <section id="area">
-      <h2>
+    <section id={link.substring(1)}>
+      <h3>
         {areaName}&nbsp;
         <AreaCompletionTracker status={status} />
-      </h2>
+      </h3>
       <ul>
         {areaObjectives.map(item => (
           <ListItem

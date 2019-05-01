@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 class ProfileForm extends Component {
   constructor(props) {
@@ -10,6 +11,9 @@ class ProfileForm extends Component {
     this.state = {
       profiles: [],
       selectedProfile: '',
+      show: false,
+      showDelete: false,
+      errorMsg: '',
     };
     this.profileInput = React.createRef();
   }
@@ -26,14 +30,8 @@ class ProfileForm extends Component {
   }
 
   handleDelete = () => {
-    if (
-      window.confirm(
-        `Are you sure you want to delete the profile named ${
-          this.state.selectedProfile
-        }?`,
-      )
-    )
-      this.props.deleteProfile(this.state.selectedProfile);
+    this.props.deleteProfile(this.state.selectedProfile);
+    this.setState({showDelete: false});
   };
 
   handleSelect = e => {
@@ -44,62 +42,107 @@ class ProfileForm extends Component {
     e.preventDefault();
     const newProfile = this.profileInput.current.value.trim();
     if (newProfile === '') {
-      alert('Invalid profile name');
       this.profileInput.current.value = '';
+      this.setState({
+        show: true,
+        errorMsg: 'The name seems to be invalid. Please try again.',
+      });
+      this.profileInput.current.focus();
       return;
     }
 
     if (this.state.profiles.includes(newProfile)) {
-      alert('Profile already exist');
+      this.setState({
+        show: true,
+        errorMsg:
+          'A profile with the same name already exists. Please enter a different name.',
+      });
+      this.profileInput.current.focus();
     } else {
       this.props.addProfile(newProfile);
       this.profileInput.current.value = '';
     }
   };
 
+  handleClose = () => this.setState({show: false});
+
+  handleDClose = () => this.setState({showDelete: false});
+
   render() {
     return (
-      <Form inline onSubmit={this.handleSubmit}>
-        <InputGroup size="sm" className="mr-2">
-          <InputGroup.Prepend>
-            <InputGroup.Text id="basic-addon1">Profile</InputGroup.Text>
-          </InputGroup.Prepend>
-          <Form.Control
-            as="select"
-            value={this.state.selectedProfile}
-            onChange={this.handleSelect}>
-            {this.state.profiles.map(profile => {
-              return (
-                <option value={profile} key={profile}>
-                  {profile}
-                </option>
-              );
-            })}
-          </Form.Control>
-        </InputGroup>
+      <React.Fragment>
+        <Form inline onSubmit={this.handleSubmit}>
+          <InputGroup size="sm" className="mr-2">
+            <InputGroup.Prepend>
+              <InputGroup.Text id="basic-addon1">Profile</InputGroup.Text>
+            </InputGroup.Prepend>
+            <Form.Control
+              as="select"
+              value={this.state.selectedProfile}
+              onChange={this.handleSelect}>
+              {this.state.profiles.map(profile => {
+                return (
+                  <option value={profile} key={profile}>
+                    {profile}
+                  </option>
+                );
+              })}
+            </Form.Control>
+          </InputGroup>
 
-        <InputGroup size="sm" className="mr-2">
-          <FormControl
-            ref={this.profileInput}
-            placeholder="new profile"
-            aria-label="new profile"
-            aria-describedby="basic-addon2"
-          />
-          <InputGroup.Append>
-            <Button type="submit" variant="info">
-              Add
+          <InputGroup size="sm" className="mr-2">
+            <FormControl
+              ref={this.profileInput}
+              placeholder="new profile"
+              aria-label="new profile"
+              aria-describedby="basic-addon2"
+              required
+            />
+            <InputGroup.Append>
+              <Button type="submit" variant="info">
+                Add
+              </Button>
+            </InputGroup.Append>
+          </InputGroup>
+
+          <Button
+            type="button"
+            size="sm"
+            variant="outline-secondary"
+            onClick={() => this.setState({showDelete: true})}>
+            Delete Profile
+          </Button>
+        </Form>
+
+        <Modal show={this.state.show} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Oops! There's an error.</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{this.state.errorMsg}</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+              Close
             </Button>
-          </InputGroup.Append>
-        </InputGroup>
+          </Modal.Footer>
+        </Modal>
 
-        <Button
-          type="button"
-          size="sm"
-          variant="danger"
-          onClick={this.handleDelete}>
-          Delete Profile
-        </Button>
-      </Form>
+        <Modal show={this.state.showDelete} onHide={this.handleDClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Confirm Deletion?</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{`Are you sure you want to delete the profile named ${
+            this.state.selectedProfile
+          }?`}</Modal.Body>
+          <Modal.Footer>
+            <Button variant="danger" onClick={this.handleDelete}>
+              Delete
+            </Button>
+            <Button variant="secondary" onClick={this.handleDClose}>
+              Cancel
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </React.Fragment>
     );
   }
 }
