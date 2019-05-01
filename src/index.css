@@ -1,13 +1,10 @@
 body {
-  margin-top: 2rem;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #6f6c65;
-  color: #fbfbfb;
 }
 
 code {
@@ -29,6 +26,6 @@ hr {
 }
 
 div#root {
-  margin: 2rem auto;
-  max-width: 80vw;
+  /* margin: 2rem auto; */
+  /* max-width: 80vw; */
 }

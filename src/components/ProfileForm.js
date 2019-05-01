@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
+import Button from 'react-bootstrap/Button';
 
 class ProfileForm extends Component {
   constructor(props) {
@@ -21,10 +25,6 @@ class ProfileForm extends Component {
     return {profiles: props.profiles, selectedProfile: props.selectedProfile};
   }
 
-  // handleAddClick = () => {
-  //   if (this.profileInput.current.value.trim() === '') return;
-  // };
-
   handleDelete = () => {
     if (
       window.confirm(
@@ -39,10 +39,6 @@ class ProfileForm extends Component {
   handleSelect = e => {
     this.props.changeProfile(e.target.value);
   };
-
-  // handleTextInput = e => {
-  //   this.setState({profile: e.target.value});
-  // };
 
   handleSubmit = e => {
     e.preventDefault();
@@ -63,65 +59,48 @@ class ProfileForm extends Component {
 
   render() {
     return (
-      <section id="profile">
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Selected Profile &nbsp;
-            <select
-              style={this.selectStyle}
-              value={this.state.selectedProfile}
-              onChange={this.handleSelect}>
-              {this.state.profiles.map(profile => {
-                return (
-                  <option value={profile} key={profile}>
-                    {profile}
-                  </option>
-                );
-              })}
-            </select>
-            &nbsp;
-          </label>
-          <input
-            style={this.inputStyle}
-            type="text"
+      <Form inline onSubmit={this.handleSubmit}>
+        <InputGroup size="sm" className="mr-2">
+          <InputGroup.Prepend>
+            <InputGroup.Text id="basic-addon1">Profile</InputGroup.Text>
+          </InputGroup.Prepend>
+          <Form.Control
+            as="select"
+            value={this.state.selectedProfile}
+            onChange={this.handleSelect}>
+            {this.state.profiles.map(profile => {
+              return (
+                <option value={profile} key={profile}>
+                  {profile}
+                </option>
+              );
+            })}
+          </Form.Control>
+        </InputGroup>
+
+        <InputGroup size="sm" className="mr-2">
+          <FormControl
             ref={this.profileInput}
-            placeholder="New Profile"
+            placeholder="new profile"
+            aria-label="new profile"
+            aria-describedby="basic-addon2"
           />
-          &nbsp;
-          <button style={this.buttonStyle} type="submit">
-            Add
-          </button>
-          &nbsp;
-          <button
-            style={this.buttonStyle}
-            type="button"
-            onClick={this.handleDelete}>
-            Delete Profile
-          </button>
-        </form>
-      </section>
+          <InputGroup.Append>
+            <Button type="submit" variant="info">
+              Add
+            </Button>
+          </InputGroup.Append>
+        </InputGroup>
+
+        <Button
+          type="button"
+          size="sm"
+          variant="danger"
+          onClick={this.handleDelete}>
+          Delete Profile
+        </Button>
+      </Form>
     );
   }
-
-  selectStyle = {
-    backgroundColor: 'transparent',
-    borderRadius: '4px',
-    padding: '5px',
-    maxWidth: '10%',
-  };
-
-  inputStyle = {
-    borderRadius: '4px',
-    border: 'none',
-    padding: '6px',
-    width: '20%',
-  };
-
-  buttonStyle = {
-    borderRadius: '3px',
-    padding: '5px',
-    border: 'none',
-  };
 }
-
 export default ProfileForm;

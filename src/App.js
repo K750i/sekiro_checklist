@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
+import NavigationBar from './components/NavigationBar';
 import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
-import ProfileForm from './components/ProfileForm';
 import dataStr from './assets/data';
 import {areas} from './assets/data';
-import './App.css';
 
 export default class App extends Component {
   constructor(props) {
@@ -222,7 +221,7 @@ export default class App extends Component {
 
     return (
       <section>
-        <ProfileForm
+        <NavigationBar
           profiles={
             localStorage.getItem('appStateSource')
               ? Object.keys(JSON.parse(localStorage.getItem('appStateSource')))
