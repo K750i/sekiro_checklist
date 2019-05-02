@@ -2,13 +2,10 @@ import React, {Component} from 'react';
 import NavigationBar from './components/NavigationBar';
 import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
+import Jumbo from './components/Jumbo';
 import dataStr from './assets/data';
 import {areas} from './assets/data';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Alert from 'react-bootstrap/Alert';
 
 export default class App extends Component {
   constructor(props) {
@@ -210,35 +207,7 @@ export default class App extends Component {
           deleteProfile={this.deleteProfile}
         />
         <Container>
-          <Jumbotron className="mt-4">
-            <Container>
-              <Row>
-                <Col>
-                  <h1>Completion Checklist</h1>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <p>
-                    This is a completion checklist for Sekiro&trade; Shadows Die
-                    Twice. This checklist is based on Fextralife's Game Progress
-                    Route which presents a recommended progression path through
-                    the game.
-                  </p>
-                </Col>
-              </Row>
-              <Row>
-                <Col md="auto">
-                  <Alert variant="danger">Spoiler Alert!</Alert>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <ul>{areaList}</ul>
-                </Col>
-              </Row>
-            </Container>
-          </Jumbotron>
+          <Jumbo areaList={areaList} />
           <main>{areaSection}</main>
         </Container>
       </section>
