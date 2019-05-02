@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import NavigationBar from './components/NavigationBar';
 import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
-import About from './components/About';
+import Faq from './components/Faq';
 import Jumbo from './components/Jumbo';
 import dataStr from './assets/data';
 import {areas} from './assets/data';
@@ -223,7 +223,7 @@ export default class App extends Component {
                   </>
                 )}
               />
-              <Route path="/about" component={About} />
+              <Route path="/faq" component={Faq} />
             </Switch>
           </Container>
         </Router>

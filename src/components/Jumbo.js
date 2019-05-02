@@ -8,7 +8,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 function Jumbo({areaList}) {
   return (
-    <Jumbotron className="mt-4">
+    <Jumbotron>
       <Container>
         <Row>
           <Col>
@@ -35,6 +35,7 @@ function Jumbo({areaList}) {
 
         <Row>
           <Col>
+            <h5>Areas Index</h5>
             <ListGroup>{areaList}</ListGroup>
           </Col>
         </Row>

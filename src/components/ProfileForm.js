@@ -71,7 +71,7 @@ class ProfileForm extends Component {
   render() {
     return (
       <React.Fragment>
-        <Form inline onSubmit={this.handleSubmit}>
+        <Form inline onSubmit={this.handleSubmit} className="flex-nowrap">
           <InputGroup size="sm" className="mr-2">
             <InputGroup.Prepend>
               <InputGroup.Text id="basic-addon1">Profile</InputGroup.Text>
@@ -90,7 +90,7 @@ class ProfileForm extends Component {
             </Form.Control>
           </InputGroup>
 
-          <InputGroup size="sm" className="mr-2">
+          <InputGroup size="sm" className="mr-2 flex-shrink-0">
             <FormControl
               ref={this.profileInput}
               placeholder="new profile"
@@ -108,6 +108,7 @@ class ProfileForm extends Component {
           <Button
             type="button"
             size="sm"
+            className="flex-shrink-0"
             variant="outline-secondary"
             onClick={() => this.setState({showDelete: true})}>
             Delete Profile

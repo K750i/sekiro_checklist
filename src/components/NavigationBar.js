@@ -24,7 +24,7 @@ function NavigationBar(props) {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
       <Navbar.Brand>
         <img
           src={require('../assets/sekiro.png')}
@@ -50,8 +50,8 @@ function NavigationBar(props) {
               style={linkStyle}
               activeStyle={linkStyleActive}
               exact
-              to="/about">
-              About
+              to="/faq">
+              FAQ
             </NavLink>
           </Nav.Item>
         </Nav>

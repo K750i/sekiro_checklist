@@ -5,8 +5,9 @@ import ListGroup from 'react-bootstrap/ListGroup';
 function IndexArea({areaName, link, status}) {
   return (
     <ListGroup.Item>
-      <a href={link}>{areaName}</a>
-      &nbsp;
+      <a href={link} className="mr-2">
+        {areaName}
+      </a>
       <AreaCompletionTracker status={status} />
     </ListGroup.Item>
   );
