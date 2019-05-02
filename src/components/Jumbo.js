@@ -4,6 +4,7 @@ import Alert from 'react-bootstrap/Alert';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 function Jumbo({areaList}) {
   return (
@@ -25,12 +26,16 @@ function Jumbo({areaList}) {
         </Row>
         <Row>
           <Col md="auto">
-            <Alert variant="danger">Spoiler Alert!</Alert>
+            <Alert variant="danger">
+              The following sections contain <strong>spoilers</strong>.
+            </Alert>
           </Col>
         </Row>
+        <hr />
+
         <Row>
           <Col>
-            <ul>{areaList}</ul>
+            <ListGroup>{areaList}</ListGroup>
           </Col>
         </Row>
       </Container>

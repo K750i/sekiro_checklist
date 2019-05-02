@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import NavigationBar from './components/NavigationBar';
 import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
+import About from './components/About';
 import Jumbo from './components/Jumbo';
 import dataStr from './assets/data';
 import {areas} from './assets/data';
 import Container from 'react-bootstrap/Container';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 export default class App extends Component {
   constructor(props) {
@@ -195,21 +197,36 @@ export default class App extends Component {
 
     return (
       <section>
-        <NavigationBar
-          profiles={
-            localStorage.getItem('appStateSource')
-              ? Object.keys(JSON.parse(localStorage.getItem('appStateSource')))
-              : ['default']
-          }
-          selectedProfile={this.state.currentProfile}
-          addProfile={this.addProfile}
-          changeProfile={this.changeProfile}
-          deleteProfile={this.deleteProfile}
-        />
-        <Container>
-          <Jumbo areaList={areaList} />
-          <main>{areaSection}</main>
-        </Container>
+        <Router>
+          <NavigationBar
+            profiles={
+              localStorage.getItem('appStateSource')
+                ? Object.keys(
+                    JSON.parse(localStorage.getItem('appStateSource')),
+                  )
+                : ['default']
+            }
+            selectedProfile={this.state.currentProfile}
+            addProfile={this.addProfile}
+            changeProfile={this.changeProfile}
+            deleteProfile={this.deleteProfile}
+          />
+          <Container>
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => (
+                  <>
+                    <Jumbo areaList={areaList} />
+                    <main>{areaSection}</main>
+                  </>
+                )}
+              />
+              <Route path="/about" component={About} />
+            </Switch>
+          </Container>
+        </Router>
       </section>
     );
   }

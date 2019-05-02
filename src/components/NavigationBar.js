@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import ProfileForm from './ProfileForm';
+import {NavLink} from 'react-router-dom';
 
 function NavigationBar(props) {
   const {
@@ -12,14 +13,47 @@ function NavigationBar(props) {
     deleteProfile,
   } = props;
 
+  const linkStyle = {
+    textDecoration: 'none',
+    marginRight: '10px',
+    color: 'rgba(255,255,255,.5)',
+  };
+
+  const linkStyleActive = {
+    color: 'rgba(255,255,255,.8)',
+  };
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand>Sekiro&trade; Shadows Die Twice</Navbar.Brand>
+      <Navbar.Brand>
+        <img
+          src={require('../assets/sekiro.png')}
+          width="60"
+          alt="Sekiro Logo"
+        />
+        &nbsp;Sekiro&trade; Shadows Die Twice
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link>Home</Nav.Link>
-          <Nav.Link>About</Nav.Link>
+          <Nav.Item>
+            <NavLink
+              style={linkStyle}
+              activeStyle={linkStyleActive}
+              exact
+              to="/">
+              Home
+            </NavLink>
+          </Nav.Item>
+          <Nav.Item>
+            <NavLink
+              style={linkStyle}
+              activeStyle={linkStyleActive}
+              exact
+              to="/about">
+              About
+            </NavLink>
+          </Nav.Item>
         </Nav>
         <ProfileForm
           profiles={profiles}
