@@ -235,7 +235,7 @@ export const areas = [
   },
   {
     id: 'Area3_2',
-    name: 'Ashina Outskirts - Revisited 1',
+    name: 'Ashina Outskirts - Revisited #1',
     link: '#area3.2',
   },
 ];

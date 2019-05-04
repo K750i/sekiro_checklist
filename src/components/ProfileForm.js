@@ -4,6 +4,8 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faUserTimes} from '@fortawesome/free-solid-svg-icons';
 
 class ProfileForm extends Component {
   constructor(props) {
@@ -76,8 +78,8 @@ class ProfileForm extends Component {
             <InputGroup.Prepend>
               <InputGroup.Text id="basic-addon1">Profile</InputGroup.Text>
             </InputGroup.Prepend>
-            <Form.Control
-              as="select"
+            <select
+              className="custom-select"
               value={this.state.selectedProfile}
               onChange={this.handleSelect}>
               {this.state.profiles.map(profile => {
@@ -87,7 +89,7 @@ class ProfileForm extends Component {
                   </option>
                 );
               })}
-            </Form.Control>
+            </select>
           </InputGroup>
 
           <InputGroup size="sm" className="mr-2 flex-shrink-0">
@@ -111,7 +113,8 @@ class ProfileForm extends Component {
             className="flex-shrink-0"
             variant="outline-secondary"
             onClick={() => this.setState({showDelete: true})}>
-            Delete Profile
+            <FontAwesomeIcon icon={faUserTimes} />
+            &nbsp;Delete Profile
           </Button>
         </Form>
 

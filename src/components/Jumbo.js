@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faExclamationCircle} from '@fortawesome/free-solid-svg-icons';
 
 function Jumbo({areaList}) {
   return (
@@ -27,7 +29,8 @@ function Jumbo({areaList}) {
         <Row>
           <Col md="auto">
             <Alert variant="danger">
-              The following sections contain <strong>spoilers</strong>.
+              <FontAwesomeIcon icon={faExclamationCircle} />
+              &nbsp;The following sections contain <strong>spoilers</strong>.
             </Alert>
           </Col>
         </Row>

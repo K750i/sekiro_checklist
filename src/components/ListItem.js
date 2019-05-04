@@ -14,7 +14,7 @@ function ListItem(props) {
         checked={done}
         id={id}
       />
-      &nbsp;
+      &nbsp;&nbsp;
       <label
         htmlFor={id}
         dangerouslySetInnerHTML={(() => ({__html: task}))()}

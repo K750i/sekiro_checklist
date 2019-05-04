@@ -4,6 +4,7 @@ import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
 import Faq from './components/Faq';
 import Jumbo from './components/Jumbo';
+import Footer from './components/Footer';
 import dataStr from './assets/data';
 import {areas} from './assets/data';
 import Container from 'react-bootstrap/Container';
@@ -199,6 +200,7 @@ export default class App extends Component {
       <section>
         <Router>
           <NavigationBar
+            id="top"
             profiles={
               localStorage.getItem('appStateSource')
                 ? Object.keys(
@@ -227,6 +229,7 @@ export default class App extends Component {
             </Switch>
           </Container>
         </Router>
+        <Footer />
       </section>
     );
   }
