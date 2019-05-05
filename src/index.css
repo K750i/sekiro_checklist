@@ -16,3 +16,12 @@ div#root {
   /* margin: 2rem auto; */
   /* max-width: 80vw; */
 }
+
+#container {
+  min-height: 100vh;
+  position: relative;
+}
+
+#body {
+  padding-bottom: 60px;
+}

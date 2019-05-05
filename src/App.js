@@ -197,7 +197,7 @@ export default class App extends Component {
     });
 
     return (
-      <section>
+      <section id="container">
         <Router>
           <NavigationBar
             id="top"
@@ -213,7 +213,7 @@ export default class App extends Component {
             changeProfile={this.changeProfile}
             deleteProfile={this.deleteProfile}
           />
-          <Container>
+          <Container id="body">
             <Switch>
               <Route
                 exact

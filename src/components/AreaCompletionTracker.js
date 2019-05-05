@@ -4,9 +4,11 @@ import Badge from 'react-bootstrap/Badge';
 function AreaCompletionTracker({status}) {
   if (status) {
     const [done, total] = status;
+    const completed = done === total;
+
     return (
-      <Badge variant={done === total ? 'success' : 'secondary'}>
-        {done}/{total}
+      <Badge variant={completed ? 'success' : 'secondary'}>
+        {completed ? 'DONE' : `${done}/${total}`}
       </Badge>
     );
   } else {

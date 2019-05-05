@@ -105,13 +105,13 @@ const dataObject = {
       {
         id: 'a3.1.7',
         task:
-          'Purchase <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Robert\'s+Firecrackers" target="_blank">Robert\'s Firecrackers</a> for 500 Sen',
+          'Purchase <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Robert\'s+Firecrackers" target="_blank">Robert\'s Firecrackers</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Firecracker" target="_blank">Shinobi Firecracker</a> Prosthetic Tool.',
         done: false,
         area: 'Area3_1',
       },
       {
         id: 'a3.1.8',
-        task: 'Find your first Recollection (phantom conversation)',
+        task: 'Find your first Remnant (phantom conversation)',
         done: false,
         area: 'Area3_1',
       },
@@ -167,7 +167,7 @@ const dataObject = {
       {
         id: 'a4.1.7',
         task:
-          'Meet <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Anayama+the+Peddler" target="_blank">Anayama the Peddler</a>',
+          'Meet <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Anayama+the+Peddler" target="_blank">Anayama the Peddler</a> from your lost memory',
         done: false,
         area: 'Area4_1',
       },
@@ -208,6 +208,174 @@ const dataObject = {
         done: false,
         area: 'Area3_2',
       },
+      {
+        id: 'a3.2.3',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Tenzen+Yamauchi" target="_blank">General Tenzen Yamauchi</a> to get another Prayer Bead',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.4',
+        task:
+          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank">Headless<a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ako\'s+Spiritfall" target="_blank">Ako\'s Spiritfall</a> and ring the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Demon+Bell" target="_blank">Demon Bell</a>',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.5',
+        task:
+          'Head past Headless and wind up on the other side to open the door for a shortcut',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.6',
+        task: 'Find your second Remnant',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.7',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gyoubu+Oniwa" target="_blank">Gyoubu Masataka Oniwa</a> and obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mechanical+Barrel" target="_blank">Mechanical Barrel</a> which allows Prosthetic Tools Upgrade',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.8',
+        task:
+          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Battlefield+Memorial+Mob" target="_blank">Battlefield Memorial Mob</a> and purchase a Gourd Seed and Robert\'s Firecrackers (if not in possession)',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.9',
+        task:
+          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tengu+of+Ashina" target="_blank">Tengu of Ashina</a> and accept his quest to kill some <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rat+Description" target="_blank">Rats</a>',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.10',
+        task: 'Head on upstairs to obtain a Prayer Bead',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.11',
+        task: 'Go past Tengu of Ashina and unlock a shortcut',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.12',
+        task:
+          'Return to Tengu of Ashina to get the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Esoteric+Text" target="_blank">Ashina Esoteric Text</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Arts" target="_blank">Ashina Arts</a> skill tree',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.13',
+        task:
+          'Defeat the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Blazing+Bull" target="_blank">Blazing Bull</a> to get another Prayer Bead as well as the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Medicine+Rank+2" target="_blank">Shinobi Medicine Rank 2</a> skill',
+        done: false,
+        area: 'Area3_2',
+      },
+    ],
+    Area5_1: [
+      {
+        id: 'a5.1.1',
+        task:
+          'Get the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gatehouse+Key" target="_blank">Gatehouse Key</a> from the guard on the bridge',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.2',
+        task:
+          'Find the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dungeon+Memorial+Mob" target="_blank">Dungeon Memorial Mob</a> and purchase a Prayer Bead',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.3',
+        task: 'Find your third Remnant',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.4',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Kuranosuke+Matsumoto" target="_blank">General Kuranosuke Matsumoto</a> and obtain a Prayer Bead',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.5',
+        task:
+          'Rescue <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fujioka+the+Info+Broker" target="_blank">Fujioka the Info Broker</a> and obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Nightjar+Beacon+Memo" target="_blank">Nightjar Beacon Memo</a>. Once he moved to <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dilapidated+Temple" target="_blank">Dilapidated Temple</a>, purchase a Gourd Seed from him',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.6',
+        task:
+          "Pick up Gourd Seed in a chest located just before the Upper Tower - Antechamber Sculptor's Idol",
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.7',
+        task:
+          "Jump down and open the main castle door leading back to Ashina Castle Sculptor's Idol",
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.8',
+        task:
+          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sabimaru" target="_blank">Sabimaru</a> Prosthetic Tool',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.9',
+        task:
+          "Eavesdrop on soldiers on the bridge near Old Grave Sculptor's Idol to further Anayama's questline",
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.10',
+        task:
+          'Purchase the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Iron+Fortress" target="_blank">Iron Fortress</a> from <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Blackhat+Badger" target="_blank">Blackhat Badger</a>, which unlocks the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Umbrella" target="_blank">Loaded Umbrella</a> Prosthetic Tool',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.11',
+        task:
+          'Open the shortcut to <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Reservoir" target="_blank">Ashina Reservoir</a>',
+        done: false,
+        area: 'Area5_1',
+      },
+    ],
+    Area1_2: [
+      {
+        id: 'a1.2.1',
+        task:
+          'Meet <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Jinzaemon+Kumano" target="_blank">Jinzaemon Kumano</a>',
+        done: false,
+        area: 'Area1_2',
+      },
+      {
+        id: 'a1.2.2',
+        task:
+          'Obtain <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gyoubu\'s+Broken+Horn" target="_blank">Gyoubu\'s Broken Horn</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Spear" target="_blank">Loaded Spear</a> Prosthetic Tool',
+        done: false,
+        area: 'Area1_2',
+      },
     ],
   },
 };
@@ -237,6 +405,16 @@ export const areas = [
     id: 'Area3_2',
     name: 'Ashina Outskirts - Revisited #1',
     link: '#area3.2',
+  },
+  {
+    id: 'Area5_1',
+    name: 'Ashina Castle',
+    link: '#area5.1',
+  },
+  {
+    id: 'Area1_2',
+    name: 'Ashina Reservoir - Revisited #1',
+    link: '#area1.2',
   },
 ];
 
