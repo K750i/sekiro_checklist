@@ -129,12 +129,17 @@ export default class App extends Component {
 
   deleteProfile = name => {
     const stateSource = JSON.parse(localStorage.getItem('appStateSource'));
+    const collapse1Obj = JSON.parse(localStorage.getItem('collapse1'));
+
+    if (!stateSource) return;
+
     delete stateSource[this.state.currentProfile];
     localStorage.setItem('appStateSource', JSON.stringify(stateSource));
 
-    const collapse1Obj = JSON.parse(localStorage.getItem('collapse1'));
-    delete collapse1Obj[this.state.currentProfile];
-    localStorage.setItem('collapse1', JSON.stringify(collapse1Obj));
+    if (collapse1Obj) {
+      delete collapse1Obj[this.state.currentProfile];
+      localStorage.setItem('collapse1', JSON.stringify(collapse1Obj));
+    }
 
     // if there is remaining profile, load the last one from the list
     const list = Object.keys(stateSource);
