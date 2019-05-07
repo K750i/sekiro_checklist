@@ -1,31 +1,79 @@
 import React from 'react';
 import ListItem from './ListItem';
 import AreaCompletionTracker from './AreaCompletionTracker';
+import Collapse from 'react-bootstrap/Collapse';
+import Button from 'react-bootstrap/Button';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faAngleUp} from '@fortawesome/free-solid-svg-icons';
+import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
 
-function AreaContainer({
-  areaName,
-  link,
-  areaObjectives,
-  status,
-  toggleCompletion,
-}) {
-  return (
-    <section id={link.substring(1)}>
-      <h3>
-        {areaName}&nbsp;
-        <AreaCompletionTracker status={status} />
-      </h3>
-      <ul>
-        {areaObjectives.map(item => (
-          <ListItem
-            key={item.id}
-            toggleCompletion={toggleCompletion}
-            item={item}
-          />
-        ))}
-      </ul>
-    </section>
-  );
+class AreaContainer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      open: true,
+    };
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    return {
+      open: props.savedCollapse1.hasOwnProperty(props.link)
+        ? props.savedCollapse1[props.link]
+        : true,
+    };
+  }
+
+  handleClick = () => {
+    const openState = {
+      [this.props.link]: !this.state.open,
+    };
+
+    this.props.handleCollapse1(openState);
+  };
+
+  render() {
+    const {
+      areaName,
+      link,
+      areaObjectives,
+      status,
+      toggleCompletion,
+    } = this.props;
+    const {open} = this.state;
+
+    return (
+      <section id={link.substring(1)}>
+        <h3>
+          <Button
+            variant="link"
+            onClick={this.handleClick}
+            aria-controls={link.substring(1) + '_collapse'}
+            aria-expanded={open}>
+            <FontAwesomeIcon
+              icon={this.state.open ? faAngleUp : faAngleDown}
+              size="2x"
+            />
+          </Button>
+          {areaName}&nbsp;
+          <AreaCompletionTracker status={status} />
+        </h3>
+        <Collapse in={this.state.open}>
+          <div id={link.substring(1) + '_collapse'}>
+            <ul>
+              {areaObjectives.map(item => (
+                <ListItem
+                  key={item.id}
+                  toggleCompletion={toggleCompletion}
+                  item={item}
+                />
+              ))}
+            </ul>
+          </div>
+        </Collapse>
+      </section>
+    );
+  }
 }
 
 export default AreaContainer;

@@ -20,6 +20,7 @@ export default class App extends Component {
         currentProfile: localStorage.getItem('currentProfile'),
         areas: areas,
         completionStatus: {},
+        savedCollapse1: JSON.parse(localStorage.getItem('collapse1')),
       };
     } else {
       this.state = {
@@ -27,6 +28,7 @@ export default class App extends Component {
         completionStatus: {},
         areas: areas,
         currentProfile: 'default',
+        savedCollapse1: {},
       };
     }
   }
@@ -66,6 +68,10 @@ export default class App extends Component {
       JSON.stringify(this.storageUpdateHelper()),
     );
     localStorage.setItem('currentProfile', this.state.currentProfile);
+    localStorage.setItem(
+      'collapse1',
+      JSON.stringify(this.state.savedCollapse1),
+    );
   }
 
   storageUpdateHelper = () => {
@@ -122,19 +128,15 @@ export default class App extends Component {
 
   deleteProfile = name => {
     const stateSource = JSON.parse(localStorage.getItem('appStateSource'));
+    delete stateSource[this.state.currentProfile];
+    localStorage.setItem('appStateSource', JSON.stringify(stateSource));
 
-    if (!stateSource) return;
-    // create a new obj without the selected profile to re-save into localStorage
-    const newStateSource = Object.keys(stateSource).reduce((o, v) => {
-      if (v !== name) {
-        o[v] = stateSource[v];
-      }
-      return o;
-    }, {});
-    localStorage.setItem('appStateSource', JSON.stringify(newStateSource));
+    const collapse1Obj = JSON.parse(localStorage.getItem('collapse1'));
+    delete collapse1Obj[this.state.currentProfile];
+    localStorage.setItem('collapse1', JSON.stringify(collapse1Obj));
 
     // if there is remaining profile, load the last one from the list
-    const list = Object.keys(newStateSource);
+    const list = Object.keys(stateSource);
     if (list.length >= 1) {
       this.changeProfile(list[list.length - 1]);
     } else {
@@ -159,11 +161,28 @@ export default class App extends Component {
       {
         data: this.loadMergeData(name),
         currentProfile: name,
+        savedCollapse1: JSON.parse(localStorage.getItem('collapse1')),
       },
       () => {
         this.updateTaskCounter();
         this.persistState();
       },
+    );
+  };
+
+  handleCollapse1 = obj => {
+    const temp = {...this.state.savedCollapse1};
+
+    temp[this.state.currentProfile] = {
+      ...this.state.savedCollapse1[this.state.currentProfile],
+      ...obj,
+    };
+
+    this.setState({savedCollapse1: temp}, () =>
+      localStorage.setItem(
+        'collapse1',
+        JSON.stringify(this.state.savedCollapse1),
+      ),
     );
   };
 
@@ -192,6 +211,11 @@ export default class App extends Component {
           status={this.state.completionStatus[area.id]}
           toggleCompletion={this.toggleCompletion}
           key={area.id}
+          profile={this.state.currentProfile}
+          savedCollapse1={
+            this.state.savedCollapse1[this.state.currentProfile] || {}
+          }
+          handleCollapse1={this.handleCollapse1}
         />
       );
     });
