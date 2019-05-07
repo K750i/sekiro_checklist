@@ -77,38 +77,37 @@ export default class App extends Component {
   }
 
   storageUpdateHelper = () => {
-    const doneObj = {};
+    const tempObj = {};
 
     Object.keys(this.state.data).forEach(area => {
-      doneObj[area] = this.state.data[area].map(obj => ({done: obj.done}));
+      tempObj[area] = this.state.data[area].reduce((obj, value) => {
+        obj[value.id] = value.done;
+        return obj;
+      }, {});
     });
 
     return {
       ...JSON.parse(localStorage.getItem('appStateSource')),
-      [this.state.currentProfile]: doneObj,
+      [this.state.currentProfile]: tempObj,
     };
   };
 
   loadMergeData = profileName => {
-    const mergedObj = {};
     const parsedSourceObj = JSON.parse(dataStr).default;
     const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[
       profileName
     ];
 
-    // merge the saved object with the full object
+    const merged = {};
     Object.keys(parsedSourceObj).forEach(area => {
-      mergedObj[area] = parsedSourceObj[area].map((obj, i) => {
-        const temp = loadedObj[area];
-        if (temp) {
-          return {...obj, ...temp[i]};
-        } else {
-          return {...obj};
-        }
-      });
+      merged[area] = parsedSourceObj[area].map((obj, i) =>
+        loadedObj[area].hasOwnProperty(obj.id)
+          ? {...obj, done: loadedObj[area][obj.id]}
+          : obj,
+      );
     });
 
-    return mergedObj;
+    return merged;
   };
 
   addProfile = name => {
