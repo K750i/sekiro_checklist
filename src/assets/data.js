@@ -614,6 +614,62 @@ const dataObject = {
         done: false,
         area: 'Area8_1',
       },
+      {
+        id: 'a8.1.2',
+        task:
+          "Jump down and activate the Under-Shrine Valley Sculptor's Idol, then proceed right to eventually reach Ashina Outskirts to get a Prayer Bead",
+        done: false,
+        area: 'Area8_1',
+      },
+      {
+        id: 'a8.1.3',
+        task:
+          '(Optional) Dive into the pond and defeat a Headless which gives <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gokan\'s+Spiritfall" target="_blank">Gokan\'s Spiritfall</a> - <em>Required the Mibu Breathing Technique</em>',
+        done: false,
+        area: 'Area8_1',
+      },
+      {
+        id: 'a8.1.4',
+        task:
+          'Progress through Sunken Valley and find a Gourd Seed in a small hut',
+        done: false,
+        area: 'Area8_1',
+      },
+      {
+        id: 'a8.1.5',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirafuji" target="_blank">Snake Eyes Shirafuji</a> and get a Prayer Bead',
+        done: false,
+        area: 'Area8_1',
+      },
+      {
+        id: 'a8.1.6',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Long-arm+Centipede+Giraffe" target="_blank">Long-arm Centipede Giraffe</a> and get a Prayer Bead',
+        done: false,
+        area: 'Area8_1',
+      },
+      {
+        id: 'a8.1.7',
+        task:
+          'Obtain <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Large+Fan" target="_blank">Large Fan</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Abduction" target="_blank">Divine Abduction</a> Prosthetic Tool',
+        done: false,
+        area: 'Area8_1',
+      },
+      {
+        id: 'a8.1.8',
+        task:
+          'Drop down the hole on the wooden floor and navigate the area to find another Prayer Bead',
+        done: false,
+        area: 'Area8_1',
+      },
+      {
+        id: 'a8.1.9',
+        task:
+          'Use the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gun+Fort+Shrine+Key" target="_blank">Gun Fort Shrine Key</a> to open the shrine',
+        done: false,
+        area: 'Area8_1',
+      },
     ],
   },
 };
