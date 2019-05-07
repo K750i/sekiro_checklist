@@ -3,13 +3,12 @@ import React from 'react';
 function ListItem(props) {
   const {id, task, done, area} = props.item;
   const listStyle = {
+    display: 'flex',
+    alignItems: 'baseline',
     listStyleType: 'none',
-    paddingBottom: '0.5rem',
   };
-  const labelStyle = {
-    display: 'inline',
-    opacity: done ? '0.5' : '1',
-  };
+  const labelStyle = {display: 'inline', opacity: done ? '0.5' : '1'};
+  const inputStyle = {marginRight: '8px', opacity: done ? '0.5' : '1'};
 
   return (
     <li style={listStyle}>
@@ -18,7 +17,7 @@ function ListItem(props) {
         type="checkbox"
         checked={done}
         id={id}
-        style={{marginRight: '8px'}}
+        style={inputStyle}
       />
       <label
         style={labelStyle}

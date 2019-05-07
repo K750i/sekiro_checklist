@@ -20,7 +20,9 @@ export default class App extends Component {
         currentProfile: localStorage.getItem('currentProfile'),
         areas: areas,
         completionStatus: {},
-        savedCollapse1: JSON.parse(localStorage.getItem('collapse1')),
+        savedCollapse1: localStorage.getItem('collapse1')
+          ? JSON.parse(localStorage.getItem('collapse1'))
+          : {},
       };
     } else {
       this.state = {

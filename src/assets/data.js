@@ -105,7 +105,7 @@ const dataObject = {
       {
         id: 'a3.1.7',
         task:
-          'Purchase <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Robert\'s+Firecrackers" target="_blank">Robert\'s Firecrackers</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Firecracker" target="_blank">Shinobi Firecracker</a> Prosthetic Tool.',
+          'Purchase <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Robert\'s+Firecrackers" target="_blank">Robert\'s Firecrackers</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Firecracker" target="_blank">Shinobi Firecracker</a> Prosthetic Tool',
         done: false,
         area: 'Area3_1',
       },
@@ -147,14 +147,14 @@ const dataObject = {
       {
         id: 'a4.1.4',
         task:
-          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Flame+Barrel" target="_blank">Flame Barrel</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Flame+Vent" target="_blank">Flame Vent</a> Prosthetic Tool.',
+          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Flame+Barrel" target="_blank">Flame Barrel</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Flame+Vent" target="_blank">Flame Vent</a> Prosthetic Tool',
         done: false,
         area: 'Area4_1',
       },
       {
         id: 'a4.1.5',
         task:
-          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Axe+of+the+Monkey" target="_blank">Shinobi Axe of the Monkey</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Axe" target="_blank">Loaded Axe</a> Prosthetic Tool.',
+          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Axe+of+the+Monkey" target="_blank">Shinobi Axe of the Monkey</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Axe" target="_blank">Loaded Axe</a> Prosthetic Tool',
         done: false,
         area: 'Area4_1',
       },
@@ -174,7 +174,7 @@ const dataObject = {
       {
         id: 'a4.1.8',
         task:
-          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Bundled+Jizo+Statue" target="_blank">Bundled Jizo Statue</a> near Anayama',
+          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Bundled+Jizo+Statue" target="_blank">Bundled Jizo Statue</a> near Anayama\'s location',
         done: false,
         area: 'Area4_1',
       },
@@ -264,7 +264,7 @@ const dataObject = {
       },
       {
         id: 'a3.2.11',
-        task: 'Go past Tengu of Ashina and unlock a shortcut',
+        task: 'Go past Tengu of Ashina and open the door for a shortcut',
         done: false,
         area: 'Area3_2',
       },
@@ -360,6 +360,56 @@ const dataObject = {
         done: false,
         area: 'Area5_1',
       },
+      {
+        id: 'a5.1.12',
+        task:
+          'Teleport back to Upper Tower - Antechamber and acquire a Prayer Bead inside a treasure chest in a secret room',
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.13',
+        task: "Interact with Emma and Kuro's remnant (fourth Remnant)",
+        done: false,
+        area: 'Area5_1',
+      },
+      {
+        id: 'a5.1.14',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Elite+-+Jinusuke+Saze" target="_blank">Ashina Elite - Jinsuke Saze</a> and obtain a Prayer Bead',
+        done: false,
+        area: 'Area5_1',
+      },
+    ],
+    Area4_2: [
+      {
+        id: 'a4.2.1',
+        task:
+          'Meet <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/The+Owl" target="_blank">The Owl</a> inside a burning building and get the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hidden+Temple+Key" target="_blank">Hidden Temple Key</a> from him',
+        done: false,
+        area: 'Area4_2',
+      },
+      {
+        id: 'a4.2.2',
+        task:
+          'Defeat mini-boss <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Juzou+the+Drunkard" target="_blank">Juzou the Drunkard</a> to obtain a Prayer Bead as well as <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Unrefined+Sake" target="_blank">Unrefined Sake</a>',
+        done: false,
+        area: 'Area4_2',
+      },
+      {
+        id: 'a4.2.3',
+        task:
+          'Get a Prayer Bead hidden inside a secret passage in the building after Juzou the Drunkard',
+        done: false,
+        area: 'Area4_2',
+      },
+      {
+        id: 'a4.2.4',
+        task:
+          'Kill <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lady+Butterfly" target="_blank">Lady Butterfly</a> to obtain <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sakura+Droplet" target="_blank">Sakura Droplet</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Lady+Butterfly" target="_blank">Memory: Lady Butterfly</a> to increase Attack Power',
+        done: false,
+        area: 'Area4_2',
+      },
     ],
     Area1_2: [
       {
@@ -375,6 +425,194 @@ const dataObject = {
           'Obtain <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gyoubu\'s+Broken+Horn" target="_blank">Gyoubu\'s Broken Horn</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Spear" target="_blank">Loaded Spear</a> Prosthetic Tool',
         done: false,
         area: 'Area1_2',
+      },
+      {
+        id: 'a1.2.3',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Seven+Ashina+Spears+-+Shikibu+Toshikatsu+Yamauchi" target="_blank">Seven Ashina Spears - Shikibu Toshikatsu Yamauchi</a> to get another Prayer Bead',
+        done: false,
+        area: 'Area1_2',
+      },
+      {
+        id: 'a1.2.4',
+        task: 'Find your fifth Remnant',
+        done: false,
+        area: 'Area1_2',
+      },
+      {
+        id: 'a1.2.5',
+        task: 'Find a Bundled Jizo Statue outside the Moon-view Tower',
+        done: false,
+        area: 'Area1_2',
+      },
+      {
+        id: 'a1.2.6',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Longswordsman" target="_blank">Lone Shadow Longswordsman<a> and get a Prayer Bead',
+        done: false,
+        area: 'Area1_2',
+      },
+    ],
+    Area6_1: [
+      {
+        id: 'a6.1.1',
+        task:
+          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rotting+Prisoner\'s+Note" target="_blank">Rotting Prisoner\'s Note</a>',
+        done: false,
+        area: 'Area6_1',
+      },
+      {
+        id: 'a6.1.2',
+        task:
+          'Speak to <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Doujun" target="_blank">Doujun</a> and get the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Surgeon\'s+Bloody+Letter" target="_blank">Surgeon\'s Bloody Letter</a>',
+        done: false,
+        area: 'Area6_1',
+      },
+    ],
+    Area7_1: [
+      {
+        id: 'a7.1.1',
+        task:
+          'Talk to <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Kotaro" target="_blank">Kotaro</a> to begin his questline',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.2',
+        task:
+          'Pick up a Gourd Seed in front of an <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Infested+Seeker" target="_blank">Infested Seeker</a>',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.3',
+        task: 'Speak to the Old Woman',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.4',
+        task:
+          'Find the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shugendo+Memorial+Mob" target="_blank">Shugendo Memorial Mob</a>, which sells the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Five-color+Rice" target="_blank">Five-Color Rice</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Persimmon" target="_blank">Persimmons</a>',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.5',
+        task:
+          'Find the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Red+and+White+Pinwheel" target="_blank">Red and White Pinwheel</a> at the edge of a cliff',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.6',
+        task:
+          'Find and grab the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/White+Pinwheel" target="_blank">White Pinwheel</a>',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.7',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Armored+Warrior" target="_blank">Armored Warrior</a> to get a Prayer Bead and the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Breath+of+Nature:+Shadow" target="_blank">Breath of Nature: Shadow</a> Skill',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.8',
+        task:
+          'Acquire the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Holy+Chapter:+Infested" target="_blank">Holy Chapter: Infested</a> from the monk inside the Main Hall. Alternatively, the item is located at the bottom of the pond around the Temple Ground area which is inaccessible without the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mibu+Breathing+Technique" target="_blank">Mibu Breathing Technique</a>',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.9',
+        task:
+          'Loot the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Esoteric+Text" target="_blank">Senpou Esoteric Text</a> by going through a cave and coming out the other side near the Temple',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.10',
+        task:
+          'Fight and kill <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Long+Arm+Centipede+Sen-Un" target="_blank">Long-arm Centipede Sen\'un</a> to get another Prayer Bead',
+        done: false,
+        area: 'Area7_1',
+      },
+      {
+        id: 'a7.1.11',
+        task:
+          'Talk to Kotaro again and give him either the White Pinwheel or the Red and White Pinwheel',
+        done: false,
+        area: 'Area7_1',
+      },
+    ],
+    Area5_2: [
+      {
+        id: 'a5.2.1',
+        task:
+          'Teleport back to Upper Tower - Ashina Dojo and defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Genichiro+Ashina" target="_blank">Genichiro Ashina</a>. Defeating him grants the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Bloodsmoke+Ninjutsu" target="_blank">Bloodsmoke Ninjutsu</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Genichiro" target="_blank">Memory: Genichiro</a>',
+        done: false,
+        area: 'Area5_2',
+      },
+      {
+        id: 'a5.2.2',
+        task:
+          'Talk to Kuro to get the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Immortal+Severance+Text" target="_blank">Immortal Severance Text</a> and exhaust his dialogues. Go outside to find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Isshin+Ashina" target="_blank">Isshin Ashina</a> as directed',
+        done: false,
+        area: 'Area5_2',
+      },
+      {
+        id: 'a5.2.3',
+        task:
+          'Head back to Kuro and pick up the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gun+Fort+Shrine+Key" target="_blank">Gun Fort Shrine Key</a> in the library which is now opened. Talk to Kuro and exhaust his dialogues again',
+        done: false,
+        area: 'Area5_2',
+      },
+    ],
+    Area7_2: [
+      {
+        id: 'a7.2.1',
+        task:
+          'Ring the bell in the large temple to face the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Folding+Screen+Monkeys" target="_blank">Folding Screen Monkeys</a>. You\'ll receive the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Illusive+Hall+Bell" target="_blank">Illusive Hall Bell</a> before the fight begins. Defeating the boss grants the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Puppeteer+Ninjutsu" target="_blank">Puppeteer Ninjutsu</a> Technique and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Screen+Monkeys" target="_blank">Memory: Screen Monkeys</a>',
+        done: false,
+        area: 'Area7_2',
+      },
+      {
+        id: 'a7.2.2',
+        task:
+          'Acquire the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mortal+Blade" target="_blank">Mortal Blade</a> from the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Child+of+Rejuvenation" target="_blank">Divine Child of Rejuvenation</a> in Inner Sanctum. With the Mortal Blade in possession, you can kill Hanbei the Undying back in Dilapidated Temple for a <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hidden+Tooth" target="_blank">Hidden Tooth</a>',
+        done: false,
+        area: 'Area7_2',
+      },
+      {
+        id: 'a7.2.3',
+        task:
+          'Talk to the Divine Child of Rejuvenation again to obtain some <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rice" target="_blank">Rice</a>',
+        done: false,
+        area: 'Area7_2',
+      },
+      {
+        id: 'a7.2.4',
+        task: 'Proceed to give her the Holy Chapter: Infested',
+        done: false,
+        area: 'Area7_2',
+      },
+      {
+        id: 'a7.2.5',
+        task:
+          'Follow the path to the left of the house in Inner Sanctum and open a shortcut back to the Main Hall of <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank">Senpou Temple</a>',
+        done: false,
+        area: 'Area7_2',
+      },
+    ],
+    Area8_1: [
+      {
+        id: 'a8.1.1',
+        task:
+          'Teleport back to the Old Grave Sculptor\'s Idol and make your way to the Great Serpent Shrine to meet with <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tengu+of+Ashina" target="_blank">Tengu of Ashina</a>. He\'ll give you the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mushin+Esoteric+Text" target="_blank">Mushin Esoteric Text</a> if you\'ve mastered the last skill in any Skill Tree',
+        done: false,
+        area: 'Area8_1',
       },
     ],
   },
@@ -412,9 +650,39 @@ export const areas = [
     link: '#area5.1',
   },
   {
+    id: 'Area4_2',
+    name: 'Hirata Estate - Revisited #1',
+    link: '#area4.2',
+  },
+  {
     id: 'Area1_2',
     name: 'Ashina Reservoir - Revisited #1',
     link: '#area1.2',
+  },
+  {
+    id: 'Area6_1',
+    name: 'Abandoned Dungeon',
+    link: '#area6.1',
+  },
+  {
+    id: 'Area7_1',
+    name: 'Senpou Temple, Mt. Kongo',
+    link: '#area7.1',
+  },
+  {
+    id: 'Area5_2',
+    name: 'Ashina Castle - Revisited #1',
+    link: '#area5.2',
+  },
+  {
+    id: 'Area7_2',
+    name: 'Senpou Temple, Mt. Kongo & Inner Sanctum',
+    link: '#area7.2',
+  },
+  {
+    id: 'Area8_1',
+    name: 'Sunken Valley',
+    link: '#area8.1',
   },
 ];
 

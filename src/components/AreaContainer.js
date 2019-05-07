@@ -44,7 +44,7 @@ class AreaContainer extends React.Component {
 
     return (
       <section id={link.substring(1)}>
-        <h3>
+        <h4>
           <Button
             variant="link"
             onClick={this.handleClick}
@@ -57,7 +57,7 @@ class AreaContainer extends React.Component {
           </Button>
           {areaName}&nbsp;
           <AreaCompletionTracker status={status} />
-        </h3>
+        </h4>
         <Collapse in={this.state.open}>
           <div id={link.substring(1) + '_collapse'}>
             <ul>
