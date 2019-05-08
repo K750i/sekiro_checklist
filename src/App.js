@@ -153,6 +153,7 @@ export default class App extends Component {
           completionStatus: {},
           areas: areas,
           currentProfile: 'default',
+          savedCollapse1: {},
         },
         () => {
           this.persistState();
@@ -250,7 +251,10 @@ export default class App extends Component {
                 path="/"
                 render={() => (
                   <>
-                    <Jumbo areaList={areaList} />
+                    <Jumbo
+                      areaList={areaList}
+                      status={this.state.completionStatus}
+                    />
                     <main>{areaSection}</main>
                   </>
                 )}
