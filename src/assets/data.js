@@ -140,7 +140,7 @@ const dataObject = {
       {
         id: 'a4.1.3',
         task:
-          'Meet <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Pot+Noble+Harunaga" target="_blank" rel="noopener noreferrer">Pot Noble Harunaga</a>',
+          'Meet <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Pot+Noble+Harunaga" target="_blank" rel="noopener noreferrer">Pot Noble Harunaga</a>. Will give you a <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Truly+Precious+Bait" target="_blank" rel="noopener noreferrer">Truly Precious Bait</a> after trading enough scales',
         done: false,
         area: 'Area4_1',
       },
@@ -626,6 +626,34 @@ const dataObject = {
         done: false,
         area: 'Area7_2',
       },
+      {
+        id: 'a7.2.6',
+        task:
+          'Proceed with the story but remember to use up the Rice and return to request more from her multiple times until she can be given a <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Persimmon" target="_blank" rel="noopener noreferrer">Persimmon</a>. Afterwards, ask for more Rice to receive <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rice+for+Kuro" target="_blank" rel="noopener noreferrer">Rice for Kuro</a>',
+        done: false,
+        area: 'Area7_2',
+      },
+      {
+        id: 'a7.2.7',
+        task:
+          'Travel back to Kuro and give him Rice for Kuro. Reset the area, talk to him again to receive <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sweet+Rice+Ball" target="_blank" rel="noopener noreferrer">Sweet Rice Ball</a> and use it immediately to trigger a dialogue. Return to Inner Sanctum, by which point the Divine Child of Rejuvenation will have moved to the Hall of Illusion',
+        done: false,
+        area: 'Area7_2',
+      },
+      {
+        id: 'a7.2.8',
+        task:
+          'Find her and talk to her for instructions to retrieve the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Holy+Chapter:+Dragon\'s+Return" target="_blank" rel="noopener noreferrer">Holy Chapter: Dragon\'s Return</a> which is located in a cave behind Senpou Temple\'s Main Hall. Give her the Holy Chapter: Dragon\'s Return',
+        done: false,
+        area: 'Area7_2',
+      },
+      {
+        id: 'a7.2.9',
+        task:
+          'After obtaining the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fresh+Serpent+Viscera" target="_blank" rel="noopener noreferrer">Fresh<a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dried+Serpent+Viscera" target="_blank" rel="noopener noreferrer">Dried</a> Serpent Viscera, give it to her and eavesdrop on her. Progress the story and when the door opened, talk to the Divine child to receive the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Frozen+Tears" target="_blank" rel="noopener noreferrer">Frozen Tears</a>',
+        done: false,
+        area: 'Area7_2',
+      },
     ],
     Area8_1: [
       {
@@ -868,6 +896,202 @@ const dataObject = {
         area: 'Area10_1',
       },
     ],
+    Area5_3: [
+      {
+        id: 'a5.3.1',
+        task:
+          "Fight your way back up to the Upper Tower - Antechamber Sculptor's Idol",
+        done: false,
+        area: 'Area5_3',
+      },
+      {
+        id: 'a5.3.2',
+        task:
+          'Defeat the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a> to obtain a Prayer Bead and the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Medicine+Rank+3" target="_blank" rel="noopener noreferrer">Shinobi Medicine Rank 3</a> Skill',
+        done: false,
+        area: 'Area5_3',
+      },
+      {
+        id: 'a5.3.3',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Masanaga+the+Spear-bearer" target="_blank" rel="noopener noreferrer">Lone Shadow Masanaga the Spear-Bearer</a> to obtain a Prayer Bead',
+        done: false,
+        area: 'Area5_3',
+      },
+      {
+        id: 'a5.3.4',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Vilehand" target="_blank" rel="noopener noreferrer">Lone Shadow Vilehand</a> to obtain a Prayer Bead',
+        done: false,
+        area: 'Area5_3',
+      },
+      {
+        id: 'a5.3.5',
+        task:
+          '<strong>(Endings Choice)</strong> - Forsake Kuro and defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Emma,+the+Gentle+Blade" target="_blank" rel="noopener noreferrer">Emma, the Gentle Blade</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Isshin+Ashina" target="_blank" rel="noopener noreferrer">Isshin Ashina</a> to receive Memory: Isshin Ashina and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/One+Mind" target="_blank" rel="noopener noreferrer">One Mind</a> Skill OR stay loyal to Kuro and defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Shinobi+Owl" target="_blank" rel="noopener noreferrer">Great Shinobi Owl</a> to receive <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Great+Shinobi" target="_blank" rel="noopener noreferrer">Memory: Great Shinobi</a> and the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Aromatic+Branch" target="_blank" rel="noopener noreferrer">Aromatic Branch</a>',
+        done: false,
+        area: 'Area5_3',
+      },
+      {
+        id: 'a5.3.6',
+        task:
+          'Talk to Kuro about gathering the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Dragon\'s+Tears" target="_blank" rel="noopener noreferrer">Divine Dragon\'s Tears</a>, reset and exhaust all dialogues and eavesdrop opportunities. Repeat until Emma moves upstairs, exhaust all dialogues with her (resting in between) until you can speak with her again at the grave to the left of the Old Grave Sculptor\'s Idol. Eavesdrop on Emma at the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dilapidated+Temple" target="_blank" rel="noopener noreferrer">Dilapidated Temple</a> and talk to her again to receive the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Father\'s+Bell+Charm" target="_blank" rel="noopener noreferrer">Father\'s Bell Charm</a>',
+        done: false,
+        area: 'Area5_3',
+      },
+    ],
+    Area4_3: [
+      {
+        id: 'a4.3.1',
+        task:
+          "With Father's Bell Charm in possession, make an offering at the Buddha statue in Dilapidated Temple",
+        done: false,
+        area: 'Area4_3',
+      },
+      {
+        id: 'a4.3.2',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Masanaga+the+Spear-bearer" target="_blank" rel="noopener noreferrer">Lone Shadow Masanaga the Spear-Bearer</a> to get a Prayer Bead',
+        done: false,
+        area: 'Area4_3',
+      },
+      {
+        id: 'a4.3.3',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Juzou+the+Drunkard" target="_blank" rel="noopener noreferrer">Juzou the Drunkard</a> for a Prayer Bead',
+        done: false,
+        area: 'Area4_3',
+      },
+      {
+        id: 'a4.3.4',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Owl+(Father)" target="_blank" rel="noopener noreferrer">Owl (Father)</a> to get the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Aromatic+Flower" target="_blank" rel="noopener noreferrer">Aromatic Flower</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Foster+Father" target="_blank" rel="noopener noreferrer">Memory: Foster Father</a>',
+        done: false,
+        area: 'Area4_3',
+      },
+    ],
+    Area11_1: [
+      {
+        id: 'a11.1.1',
+        task:
+          'Teleport to the Wedding Cave Door and pray in the bridal palanquin inside the cave',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.2',
+        task:
+          'Defeat the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Corrupted+Monk" target="_blank" rel="noopener noreferrer">Corrupted Monk</a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dragon\'s+Tally+Board" target="_blank" rel="noopener noreferrer">Dragon\'s Tally Board</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+True+Monk" target="_blank" rel="noopener noreferrer">Memory: True Monk</a>',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.3',
+        task:
+          'Grab <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Water+of+the+Palace" target="_blank" rel="noopener noreferrer">Water of the Palace</a> in a secret room. Can be given to the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Head+Priest+of+Mibu+Village" target="_blank" rel="noopener noreferrer">Head Priest of Mibu Village</a>',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.4',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sakura+Bull+of+the+Palace" target="_blank" rel="noopener noreferrer">Sakura Bull of the Palace</a> to receive a Prayer Bead and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/A+Beast\'s+Karma" target="_blank" rel="noopener noreferrer">A Beast\'s Karma</a> Skill',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.5',
+        task:
+          'Speak to <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Pot+Noble+Koremori" target="_blank" rel="noopener noreferrer">Pot Noble Koremori</a>.  Will give you a <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Truly+Precious+Bait" target="_blank" rel="noopener noreferrer">Truly Precious Bait</a> after trading enough scales',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.6',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shichimen+Warrior" target="_blank" rel="noopener noreferrer">Shichimen Warrior</a> to get a <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lapis+Lazuli" target="_blank" rel="noopener noreferrer">Lapis Lazuli</a>',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.7',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Okami+Leader+Shizu" target="_blank" rel="noopener noreferrer">Okami Leader Shizu</a> to get a Prayer Bead',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.8',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank" rel="noopener noreferrer">Headless</a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Yashariku\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Yashariku\'s Spiritfall</a>',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.9',
+        task: 'Acquire a Prayer Bead inside a treasure chest underwater',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.10',
+        task:
+          "Find a Gourd Seed in the house close to the Palace Grounds Sculptor's Idol",
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.11',
+        task:
+          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+White+Whisker" target="_blank" rel="noopener noreferrer">Great White Whisker</a> by killing the Great Carp and giving it to the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Carp+Attendant" target="_blank" rel="noopener noreferrer">Great Carp Attendant</a>',
+        done: false,
+        area: 'Area11_1',
+      },
+      {
+        id: 'a11.1.12',
+        task:
+          'Defeat the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Dragon" target="_blank" rel="noopener noreferrer">Divine Dragon</a> to acquire the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Dragon\'s+Tears" target="_blank" rel="noopener noreferrer">Divine Dragon\'s Tears</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Divine+Dragon" target="_blank" rel="noopener noreferrer">Memory: Divine Dragon</a>',
+        done: false,
+        area: 'Area11_1',
+      },
+    ],
+    Area5_4: [
+      {
+        id: 'a5.4.1',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Elite+Ujinari+Mizuo" target="_blank" rel="noopener noreferrer">Ashina Elite - Ujinari Mizuo</a>, below Isshin Ashina\'s watchtower to get a Prayer Bead',
+        done: false,
+        area: 'Area5_4',
+      },
+      {
+        id: 'a5.4.2',
+        task:
+          'Make it to Ashina Outskirts and defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shigekichi+of+the+Red+Guard" target="_blank" rel="noopener noreferrer">Shigekichi of the Red Guard</a> to obtain a Prayer Bead',
+        done: false,
+        area: 'Area5_4',
+      },
+      {
+        id: 'a5.4.3',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Demon+of+Hatred" target="_blank" rel="noopener noreferrer">Demon of Hatred</a> to get 2 <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lapis+Lazuli" target="_blank" rel="noopener noreferrer">Lapis Lazuli</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Hatred+Demon" target="_blank" rel="noopener noreferrer">Memory: Hatred Demon</a>',
+        done: false,
+        area: 'Area5_4',
+      },
+      {
+        id: 'a5.4.4',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Seven+Ashina+Spears+-+Shume+Masaji+Oniwa" target="_blank" rel="noopener noreferrer">Seven Ashina Spears - Shume Masaji Oniwa</a> to get a Prayer Bead',
+        done: false,
+        area: 'Area5_4',
+      },
+      {
+        id: 'a5.4.5',
+        task:
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Genichiro,+Way+of+Tomoe" target="_blank" rel="noopener noreferrer">Genichiro, Way of Tomoe</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Isshin,+the+Sword+Saint" target="_blank" rel="noopener noreferrer">Isshin, the Sword Saint</a> to acquire the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dragon+Flash" target="_blank" rel="noopener noreferrer">Dragon Flash</a> Skill and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Saint+Isshin" target="_blank" rel="noopener noreferrer">Memory: Saint Isshin</a>',
+        done: false,
+        area: 'Area5_4',
+      },
+    ],
   },
 };
 
@@ -946,6 +1170,26 @@ export const areas = [
     id: 'Area10_1',
     name: 'Mibu Village',
     link: '#area10.1',
+  },
+  {
+    id: 'Area5_3',
+    name: 'Ashina Castle - Revisited #2',
+    link: '#area5.3',
+  },
+  {
+    id: 'Area4_3',
+    name: "Hirata Estate - Owl's Memory",
+    link: '#area4.3',
+  },
+  {
+    id: 'Area11_1',
+    name: 'Fountainhead Palace',
+    link: '#area11.1',
+  },
+  {
+    id: 'Area5_4',
+    name: 'Ashina Castle, Ashina Outskirts & Ashina Reservoir',
+    link: '#area5.4',
   },
 ];
 
