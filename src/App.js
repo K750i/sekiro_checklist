@@ -5,8 +5,16 @@ import AreaContainer from './components/AreaContainer';
 import Faq from './components/Faq';
 import Jumbo from './components/Jumbo';
 import Footer from './components/Footer';
-import dataStr from './assets/data';
+import playthroughStr from './assets/data';
 import {areas} from './assets/data';
+import {
+  updateTaskCounter,
+  toggleCheckbox,
+  persistState,
+  storageUpdateHelper,
+  loadMergeData,
+  collapseSection,
+} from './assets/exportedFunctions';
 import Container from 'react-bootstrap/Container';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -14,127 +22,76 @@ export default class App extends Component {
   constructor(props) {
     super(props);
 
+    this.updateTaskCounter = updateTaskCounter.bind(this);
+    this.toggleCheckbox = toggleCheckbox.bind(this);
+    this.persistState = persistState.bind(this);
+    this.storageUpdateHelper = storageUpdateHelper.bind(this);
+    this.collapseSection = collapseSection.bind(this);
+
     if (localStorage.getItem('currentProfile')) {
       this.state = {
-        data: this.loadMergeData(localStorage.getItem('currentProfile')),
+        data: loadMergeData(
+          JSON.parse(playthroughStr).default,
+          localStorage.getItem('currentProfile'),
+        ),
         currentProfile: localStorage.getItem('currentProfile'),
         areas: areas,
         completionStatus: {},
-        savedCollapse1: localStorage.getItem('collapse1')
+        playthroughCollapse: localStorage.getItem('collapse1')
           ? JSON.parse(localStorage.getItem('collapse1'))
           : {},
       };
     } else {
       this.state = {
-        data: JSON.parse(dataStr).default,
+        data: JSON.parse(playthroughStr).default,
         completionStatus: {},
         areas: areas,
         currentProfile: 'default',
-        savedCollapse1: {},
+        playthroughCollapse: {},
       };
     }
   }
 
-  updateTaskCounter() {
-    const completed = {};
-
-    Object.keys(this.state.data).forEach(area => {
-      completed[area] = this.state.data[area].reduce(
-        ([done, total], v) => [v.done ? ++done : done, ++total],
-        [0, 0],
-      );
-    });
-
-    this.setState({completionStatus: completed});
-  }
-
   toggleCompletion = (id, area) => {
-    const newState = {...this.state.data};
-    newState[area].map(item => {
-      if (item.id === id) {
-        item.done = !item.done;
-      }
-      return item;
-    });
+    const newState = this.toggleCheckbox({...this.state.data}, id, area);
 
     this.setState({data: newState});
 
-    this.persistState();
+    this.persistState(this.state);
 
-    this.updateTaskCounter();
-  };
-
-  persistState() {
-    localStorage.setItem(
-      'appStateSource',
-      JSON.stringify(this.storageUpdateHelper()),
-    );
-    localStorage.setItem('currentProfile', this.state.currentProfile);
-    localStorage.setItem(
-      'collapse1',
-      JSON.stringify(this.state.savedCollapse1),
-    );
-  }
-
-  storageUpdateHelper = () => {
-    const tempObj = {};
-
-    Object.keys(this.state.data).forEach(area => {
-      tempObj[area] = this.state.data[area].reduce((obj, value) => {
-        obj[value.id] = value.done;
-        return obj;
-      }, {});
-    });
-
-    return {
-      ...JSON.parse(localStorage.getItem('appStateSource')),
-      [this.state.currentProfile]: tempObj,
-    };
-  };
-
-  loadMergeData = profileName => {
-    const parsedSourceObj = JSON.parse(dataStr).default;
-    const loadedObj = JSON.parse(localStorage.getItem('appStateSource'))[
-      profileName
-    ];
-
-    const merged = {};
-    Object.keys(parsedSourceObj).forEach(area => {
-      merged[area] = parsedSourceObj[area].map((obj, i) =>
-        loadedObj[area].hasOwnProperty(obj.id)
-          ? {...obj, done: loadedObj[area][obj.id]}
-          : obj,
-      );
-    });
-
-    return merged;
+    this.setState(this.updateTaskCounter(this.state.data));
   };
 
   addProfile = name => {
     // reset state to original
     this.setState(
-      {data: JSON.parse(dataStr).default, currentProfile: name},
+      {data: JSON.parse(playthroughStr).default, currentProfile: name},
       () => {
         localStorage.setItem('currentProfile', name);
         localStorage.setItem(
-          'appStateSource',
-          JSON.stringify(this.storageUpdateHelper()),
+          'playthroughChecklist',
+          JSON.stringify(this.storageUpdateHelper(this.state.data, name)),
         );
 
-        this.updateTaskCounter();
+        this.setState(this.updateTaskCounter(this.state.data));
         this.forceUpdate();
       },
     );
   };
 
   deleteProfile = name => {
-    const stateSource = JSON.parse(localStorage.getItem('appStateSource'));
+    const playthroughList = JSON.parse(
+      localStorage.getItem('playthroughChecklist'),
+    );
     const collapse1Obj = JSON.parse(localStorage.getItem('collapse1'));
 
-    if (!stateSource) return;
+    if (!playthroughList) return;
 
-    delete stateSource[this.state.currentProfile];
-    localStorage.setItem('appStateSource', JSON.stringify(stateSource));
+    delete playthroughList[this.state.currentProfile];
+    localStorage.setItem(
+      'playthroughChecklist',
+      JSON.stringify(playthroughList),
+    );
 
     if (collapse1Obj) {
       delete collapse1Obj[this.state.currentProfile];
@@ -142,21 +99,21 @@ export default class App extends Component {
     }
 
     // if there is remaining profile, load the last one from the list
-    const list = Object.keys(stateSource);
+    const list = Object.keys(playthroughList);
     if (list.length >= 1) {
       this.changeProfile(list[list.length - 1]);
     } else {
       // otherwise load a default profile
       this.setState(
         {
-          data: JSON.parse(dataStr).default,
+          data: JSON.parse(playthroughStr).default,
           completionStatus: {},
           areas: areas,
           currentProfile: 'default',
-          savedCollapse1: {},
+          playthroughCollapse: {},
         },
         () => {
-          this.persistState();
+          this.persistState(this.state);
           this.forceUpdate();
         },
       );
@@ -166,35 +123,34 @@ export default class App extends Component {
   changeProfile = name => {
     this.setState(
       {
-        data: this.loadMergeData(name),
+        data: loadMergeData(JSON.parse(playthroughStr).default, name),
         currentProfile: name,
-        savedCollapse1: JSON.parse(localStorage.getItem('collapse1')),
+        playthroughCollapse: JSON.parse(localStorage.getItem('collapse1')),
       },
       () => {
-        this.updateTaskCounter();
-        this.persistState();
+        this.setState(this.updateTaskCounter(this.state.data));
+        this.persistState(this.state);
       },
     );
   };
 
-  handleCollapse1 = obj => {
-    const temp = {...this.state.savedCollapse1};
+  handleCollapse = obj => {
+    const newState = this.collapseSection(
+      {...this.state.playthroughCollapse},
+      this.state.currentProfile,
+      obj,
+    );
 
-    temp[this.state.currentProfile] = {
-      ...this.state.savedCollapse1[this.state.currentProfile],
-      ...obj,
-    };
-
-    this.setState({savedCollapse1: temp}, () =>
+    this.setState({playthroughCollapse: newState}, () =>
       localStorage.setItem(
         'collapse1',
-        JSON.stringify(this.state.savedCollapse1),
+        JSON.stringify(this.state.playthroughCollapse),
       ),
     );
   };
 
   componentDidMount() {
-    this.updateTaskCounter();
+    this.setState(this.updateTaskCounter(this.state.data));
   }
 
   render() {
@@ -219,10 +175,10 @@ export default class App extends Component {
           toggleCompletion={this.toggleCompletion}
           key={area.id}
           profile={this.state.currentProfile}
-          savedCollapse1={
-            this.state.savedCollapse1[this.state.currentProfile] || {}
+          collapse={
+            this.state.playthroughCollapse[this.state.currentProfile] || {}
           }
-          handleCollapse1={this.handleCollapse1}
+          handleCollapse={this.handleCollapse}
         />
       );
     });
@@ -233,9 +189,9 @@ export default class App extends Component {
           <NavigationBar
             id="top"
             profiles={
-              localStorage.getItem('appStateSource')
+              localStorage.getItem('playthroughChecklist')
                 ? Object.keys(
-                    JSON.parse(localStorage.getItem('appStateSource')),
+                    JSON.parse(localStorage.getItem('playthroughChecklist')),
                   )
                 : ['default']
             }

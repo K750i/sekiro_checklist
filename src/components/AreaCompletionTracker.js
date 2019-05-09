@@ -6,7 +6,7 @@ function AreaCompletionTracker({status}) {
     const [done, total] = status;
     const completed = done === total;
 
-    return (
+    return done === 0 && total === 0 ? null : (
       <Badge variant={completed ? 'success' : 'secondary'}>
         {completed ? 'DONE' : `${done}/${total}`}
       </Badge>

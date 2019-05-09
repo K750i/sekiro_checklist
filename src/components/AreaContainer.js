@@ -18,8 +18,8 @@ class AreaContainer extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     return {
-      open: props.savedCollapse1.hasOwnProperty(props.link)
-        ? props.savedCollapse1[props.link]
+      open: props.collapse.hasOwnProperty(props.link)
+        ? props.collapse[props.link]
         : true,
     };
   }
@@ -29,7 +29,7 @@ class AreaContainer extends React.Component {
       [this.props.link]: !this.state.open,
     };
 
-    this.props.handleCollapse1(openState);
+    this.props.handleCollapse(openState);
   };
 
   render() {
