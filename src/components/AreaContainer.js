@@ -41,9 +41,15 @@ class AreaContainer extends React.Component {
       toggleCompletion,
     } = this.props;
     const {open} = this.state;
+    // offset the anchor link so it won't butt against the Nav
+    const sectionStyle = {
+      paddingTop: '80px',
+      marginTop: '-80px',
+      backgroundClip: 'content-box',
+    };
 
     return (
-      <section id={link.substring(1)}>
+      <section style={sectionStyle} id={link.substring(1)}>
         <h4>
           <Button
             variant="link"
@@ -60,6 +66,7 @@ class AreaContainer extends React.Component {
         </h4>
         <Collapse in={this.state.open}>
           <div id={link.substring(1) + '_collapse'}>
+            <hr style={{marginTop: 0}} />
             <ul>
               {areaObjectives.map(item => (
                 <ListItem

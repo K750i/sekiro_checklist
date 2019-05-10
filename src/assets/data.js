@@ -238,7 +238,7 @@ const dataObject = {
       {
         id: 'a3.2.7',
         task:
-          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gyoubu+Oniwa" target="_blank" rel="noopener noreferrer">Gyoubu Masataka Oniwa</a> and obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mechanical+Barrel" target="_blank" rel="noopener noreferrer">Mechanical Barrel</a> which allows Prosthetic Tools Upgrade',
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gyoubu+Oniwa" target="_blank" rel="noopener noreferrer">Gyoubu Masataka Oniwa</a> and obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mechanical+Barrel" target="_blank" rel="noopener noreferrer">Mechanical Barrel</a> which allows Prosthetic Tools Upgrade as well as <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Gyoubu+Oniwa" target="_blank" rel="noopener noreferrer">Memory: Gyoubu Oniwa</a>',
         done: false,
         area: 'Area3_2',
       },
@@ -455,7 +455,7 @@ const dataObject = {
       {
         id: 'a1.2.6',
         task:
-          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Longswordsman" target="_blank" rel="noopener noreferrer">Lone Shadow Longswordsman<a> and get a Prayer Bead',
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Longswordsman" target="_blank" rel="noopener noreferrer">Lone Shadow Longswordsman</a> and get a Prayer Bead',
         done: false,
         area: 'Area1_2',
       },

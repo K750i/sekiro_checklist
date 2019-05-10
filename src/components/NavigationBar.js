@@ -24,7 +24,7 @@ function NavigationBar(props) {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
+    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4" sticky="top">
       <Navbar.Brand>
         <img
           src={require('../assets/sekiro.png')}
@@ -34,8 +34,10 @@ function NavigationBar(props) {
         &nbsp;Sekiro&trade; Shadows Die Twice
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
+      <Navbar.Collapse
+        id="basic-navbar-nav"
+        className="justify-content-between">
+        <Nav className="ml-3 mr-5 flex-shrink-0">
           <Nav.Item>
             <NavLink
               style={linkStyle}

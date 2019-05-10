@@ -74,7 +74,7 @@ class ProfileForm extends Component {
     return (
       <React.Fragment>
         <Form inline onSubmit={this.handleSubmit} className="flex-nowrap">
-          <InputGroup size="sm" className="mr-2">
+          <InputGroup size="sm" className="mr-2 flex-nowrap flex-shrink-1">
             <InputGroup.Prepend>
               <InputGroup.Text id="basic-addon1">Profile</InputGroup.Text>
             </InputGroup.Prepend>
@@ -92,7 +92,7 @@ class ProfileForm extends Component {
             </select>
           </InputGroup>
 
-          <InputGroup size="sm" className="mr-2 flex-shrink-0">
+          <InputGroup size="sm" className="mr-2 flex-nowrap flex-shrink-0">
             <FormControl
               ref={this.profileInput}
               placeholder="new profile"

@@ -52,6 +52,20 @@ function AllTask({sectionList, alltaskSection, status}) {
           </Row>
         </Container>
       </Jumbotron>
+      <Alert variant="primary">
+        Bosses marked with{' '}
+        <span role="img" aria-label="emoji">
+          ⚔️
+        </span>{' '}
+        drop{' '}
+        <Alert.Link
+          href="https://sekiroshadowsdietwice.wiki.fextralife.com/Prayer+Beads"
+          target="_blank"
+          rel="noopener noreferrer">
+          Prayer Beads
+        </Alert.Link>
+        .
+      </Alert>
       <main>{alltaskSection}</main>
     </>
   );
