@@ -1,14 +1,14 @@
-export function updateTaskCounter(data) {
+export function updateTaskCounter(data, status) {
   const completed = {};
 
-  Object.keys(this.state.data).forEach(area => {
-    completed[area] = this.state.data[area].reduce(
+  Object.keys(data).forEach(area => {
+    completed[area] = data[area].reduce(
       ([done, total], v) => [v.done ? ++done : done, ++total],
       [0, 0],
     );
   });
 
-  return {completionStatus: completed};
+  return {[status]: completed};
 }
 
 export function toggleCheckbox(data, id, section) {
@@ -22,16 +22,29 @@ export function toggleCheckbox(data, id, section) {
   return data;
 }
 
-export function persistState({data, currentProfile, playthroughCollapse}) {
+export function persistState({
+  data,
+  alltaskData,
+  currentProfile,
+  playthroughCollapse,
+}) {
   localStorage.setItem(
     'playthroughChecklist',
-    JSON.stringify(storageUpdateHelper(data, currentProfile)),
+    JSON.stringify(
+      storageUpdateHelper(data, currentProfile, 'playthroughChecklist'),
+    ),
+  );
+  localStorage.setItem(
+    'alltaskChecklist',
+    JSON.stringify(
+      storageUpdateHelper(alltaskData, currentProfile, 'alltaskChecklist'),
+    ),
   );
   localStorage.setItem('currentProfile', currentProfile);
   localStorage.setItem('collapse1', JSON.stringify(playthroughCollapse));
 }
 
-export function storageUpdateHelper(data, currentProfile) {
+export function storageUpdateHelper(data, currentProfile, checklistName) {
   const tempObj = {};
 
   Object.keys(data).forEach(section => {
@@ -42,13 +55,13 @@ export function storageUpdateHelper(data, currentProfile) {
   });
 
   return {
-    ...JSON.parse(localStorage.getItem('playthroughChecklist')),
+    ...JSON.parse(localStorage.getItem(checklistName)),
     [currentProfile]: tempObj,
   };
 }
 
-export function loadMergeData(parsedSourceObj, profileName) {
-  const loadedObj = JSON.parse(localStorage.getItem('playthroughChecklist'))[
+export function loadMergeData(parsedSourceObj, checklistName, profileName) {
+  const loadedObj = JSON.parse(localStorage.getItem(checklistName))[
     profileName
   ];
 
@@ -66,6 +79,7 @@ export function loadMergeData(parsedSourceObj, profileName) {
 
 export function collapseSection(collapseObj, profile, isOpenObj) {
   const temp = {...collapseObj};
+  console.log(temp);
 
   temp[profile] = {
     ...collapseObj[profile],

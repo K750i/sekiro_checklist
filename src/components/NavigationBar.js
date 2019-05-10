@@ -45,6 +45,17 @@ function NavigationBar(props) {
               Home
             </NavLink>
           </Nav.Item>
+
+          <Nav.Item>
+            <NavLink
+              style={linkStyle}
+              activeStyle={linkStyleActive}
+              exact
+              to="/overall">
+              All Tasks
+            </NavLink>
+          </Nav.Item>
+
           <Nav.Item>
             <NavLink
               style={linkStyle}

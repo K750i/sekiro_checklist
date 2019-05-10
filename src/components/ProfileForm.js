@@ -114,7 +114,7 @@ class ProfileForm extends Component {
             variant="outline-secondary"
             onClick={() => this.setState({showDelete: true})}>
             <FontAwesomeIcon icon={faUserTimes} />
-            &nbsp;Delete Profile
+            &nbsp;Delete
           </Button>
         </Form>
 

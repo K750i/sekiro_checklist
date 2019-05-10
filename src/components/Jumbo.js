@@ -20,21 +20,23 @@ function Jumbo({areaList, status}) {
       <Container>
         <Row>
           <Col>
-            <h2>Game Completion Checklist</h2>
+            <h2>Progression Checklist</h2>
           </Col>
         </Row>
         <Row>
           <Col>
             <p>
-              This is a completion checklist for Sekiro&trade; Shadows Die
-              Twice. This checklist is based on{' '}
+              This is a playthrough or progression checklist for Sekiro&trade;
+              Shadows Die Twice. This checklist is roughly based on{' '}
               <a
                 href="https://sekiroshadowsdietwice.wiki.fextralife.com/Game+Progress+Route"
                 target="_blank"
                 rel="noopener noreferrer">
                 Fextralife's Game Progress Route
               </a>{' '}
-              which presents a logical progression path through the game.
+              which presents a logical progression path through the game. Please
+              note that it does not take into account all NPCs questlines or its
+              divergence.
             </p>
           </Col>
         </Row>
