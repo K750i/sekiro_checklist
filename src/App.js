@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import NavigationBar from './components/NavigationBar';
 import Main from './components/Main';
 import AllTask from './components/AllTask';
-import Faq from './components/Faq';
+import About from './components/About';
 import IndexArea from './components/IndexArea';
 import AreaContainer from './components/AreaContainer';
 import Footer from './components/Footer';
@@ -362,7 +362,7 @@ export default class App extends Component {
                 )}
               />
               <Route
-                path="/overall"
+                path="/checklist"
                 render={props => (
                   <AllTask
                     sectionList={sectionList}
@@ -372,7 +372,7 @@ export default class App extends Component {
                   />
                 )}
               />
-              <Route path="/faq" component={Faq} />
+              <Route path="/about" component={About} />
             </Switch>
           </Container>
         </Router>

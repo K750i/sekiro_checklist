@@ -92,7 +92,10 @@ class ProfileForm extends Component {
             </select>
           </InputGroup>
 
-          <InputGroup size="sm" className="mr-2 flex-nowrap flex-shrink-0">
+          <InputGroup
+            size="sm"
+            className="mr-2 flex-nowrap"
+            style={{minWidth: '200px'}}>
             <FormControl
               ref={this.profileInput}
               placeholder="new profile"

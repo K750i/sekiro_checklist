@@ -52,7 +52,7 @@ function NavigationBar(props) {
               style={linkStyle}
               activeStyle={linkStyleActive}
               exact
-              to="/overall">
+              to="/checklist">
               Checklist
             </NavLink>
           </Nav.Item>
@@ -62,7 +62,7 @@ function NavigationBar(props) {
               style={linkStyle}
               activeStyle={linkStyleActive}
               exact
-              to="/faq">
+              to="/about">
               About
             </NavLink>
           </Nav.Item>

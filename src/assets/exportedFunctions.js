@@ -27,6 +27,7 @@ export function persistState({
   alltaskData,
   currentProfile,
   playthroughCollapse,
+  alltaskCollapse,
 }) {
   localStorage.setItem(
     'playthroughChecklist',
@@ -42,6 +43,7 @@ export function persistState({
   );
   localStorage.setItem('currentProfile', currentProfile);
   localStorage.setItem('collapse1', JSON.stringify(playthroughCollapse));
+  localStorage.setItem('collapse2', JSON.stringify(alltaskCollapse));
 }
 
 export function storageUpdateHelper(data, currentProfile, checklistName) {
@@ -68,7 +70,7 @@ export function loadMergeData(parsedSourceObj, checklistName, profileName) {
   const merged = {};
   Object.keys(parsedSourceObj).forEach(section => {
     merged[section] = parsedSourceObj[section].map((obj, i) =>
-      loadedObj[section].hasOwnProperty(obj.id)
+      (loadedObj[section] || {}).hasOwnProperty(obj.id)
         ? {...obj, done: loadedObj[section][obj.id]}
         : obj,
     );

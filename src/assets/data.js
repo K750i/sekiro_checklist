@@ -218,7 +218,7 @@ const dataObject = {
       {
         id: 'a3.2.4',
         task:
-          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank" rel="noopener noreferrer">Headless<a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ako\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Ako\'s Spiritfall</a> and ring the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Demon+Bell" target="_blank" rel="noopener noreferrer">Demon Bell</a>',
+          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank" rel="noopener noreferrer">Headless</a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ako\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Ako\'s Spiritfall</a> and ring the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Demon+Bell" target="_blank" rel="noopener noreferrer">Demon Bell</a>',
         done: false,
         area: 'Area3_2',
       },
@@ -1043,7 +1043,7 @@ const dataObject = {
       {
         id: 'a11.1.11',
         task:
-          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+White+Whisker" target="_blank" rel="noopener noreferrer">Great White Whisker</a> by killing the Great Carp and giving it to the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Carp+Attendant" target="_blank" rel="noopener noreferrer">Great Carp Attendant</a>',
+          'Obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+White+Whisker" target="_blank" rel="noopener noreferrer">Great White Whisker</a> by killing the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Colored+Carp" target="_blank" rel="noopener noreferrer">Great Colored Carp</a> and giving it to the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Carp+Attendant" target="_blank" rel="noopener noreferrer">Great Carp Attendant</a>',
         done: false,
         area: 'Area11_1',
       },
