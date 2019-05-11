@@ -31,7 +31,6 @@ function NavigationBar(props) {
           width="60"
           alt="Sekiro Logo"
         />
-        &nbsp;Sekiro&trade; Shadows Die Twice
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse
@@ -44,7 +43,7 @@ function NavigationBar(props) {
               activeStyle={linkStyleActive}
               exact
               to="/">
-              Home
+              Playthrough
             </NavLink>
           </Nav.Item>
 
@@ -54,7 +53,7 @@ function NavigationBar(props) {
               activeStyle={linkStyleActive}
               exact
               to="/overall">
-              All Tasks
+              Checklist
             </NavLink>
           </Nav.Item>
 
@@ -64,7 +63,7 @@ function NavigationBar(props) {
               activeStyle={linkStyleActive}
               exact
               to="/faq">
-              FAQ
+              About
             </NavLink>
           </Nav.Item>
         </Nav>

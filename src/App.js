@@ -19,6 +19,9 @@ import {
 import Container from 'react-bootstrap/Container';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -374,6 +377,11 @@ export default class App extends Component {
           </Container>
         </Router>
         <Footer />
+        <div className="fixed-anchor">
+          <a href="#top">
+            <FontAwesomeIcon icon={faAngleDoubleUp} />
+          </a>
+        </div>
       </section>
     );
   }

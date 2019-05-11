@@ -1,9 +1,13 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons';
+import {faReact} from '@fortawesome/free-brands-svg-icons';
+import {faBootstrap} from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
-  const style = {
+  const footerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     position: 'absolute',
     bottom: '0',
     width: '100%',
@@ -12,13 +16,15 @@ function Footer() {
     color: 'rgba(255, 255, 255, 0.5)',
   };
 
+  const divStyle = {
+    fontSize: '0.9rem',
+  };
+
   return (
-    <footer style={style}>
-      <div style={{padding: '10px'}}>
-        Footer
-        <a href="#top" style={{color: 'inherit'}}>
-          <FontAwesomeIcon icon={faAngleDoubleUp} size="2x" />
-        </a>
+    <footer style={footerStyle}>
+      <div style={divStyle}>
+        Made with <FontAwesomeIcon icon={faReact} /> React and{' '}
+        <FontAwesomeIcon icon={faBootstrap} /> Bootstrap
       </div>
     </footer>
   );

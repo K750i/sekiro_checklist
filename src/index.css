@@ -18,10 +18,21 @@ div#root {
 }
 
 #container {
-  min-height: 100vh;
   position: relative;
 }
 
 #body {
+  min-height: 100vh;
   padding-bottom: 60px;
+}
+
+.fixed-anchor {
+  position: sticky;
+  text-align: right;
+  padding-right: 50px;
+  bottom: 20px;
+}
+
+.fixed-anchor a {
+  color: gray;
 }

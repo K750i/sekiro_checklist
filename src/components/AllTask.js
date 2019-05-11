@@ -55,7 +55,7 @@ function AllTask({sectionList, alltaskSection, status}) {
       <Alert variant="primary">
         Bosses marked with{' '}
         <span role="img" aria-label="emoji">
-          ⚔️
+          ⼑
         </span>{' '}
         drop{' '}
         <Alert.Link
@@ -70,5 +70,4 @@ function AllTask({sectionList, alltaskSection, status}) {
     </>
   );
 }
-
 export default AllTask;

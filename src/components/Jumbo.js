@@ -20,7 +20,7 @@ function Jumbo({areaList, status}) {
       <Container>
         <Row>
           <Col>
-            <h2>Progression Checklist</h2>
+            <h2>Progression Checklist for Sekiro&trade;: Shadows Die Twice</h2>
           </Col>
         </Row>
         <Row>
