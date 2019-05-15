@@ -666,7 +666,7 @@ const dataObject = {
       {
         id: 'a8.1.2',
         task:
-          "Jump down and activate the Under-Shrine Valley Sculptor's Idol, then proceed right to eventually reach Ashina Outskirts to get a Prayer Bead",
+          "Jump down and activate the Under-Shrine Valley Sculptor's Idol, then turn around towards the 2 riflemen to eventually reach Ashina Outskirts to get a Prayer Bead",
         done: false,
         area: 'Area8_1',
       },
@@ -1009,7 +1009,7 @@ const dataObject = {
       {
         id: 'a11.1.6',
         task:
-          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shichimen+Warrior" target="_blank" rel="noopener noreferrer">Shichimen Warrior</a> to get a <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lapis+Lazuli" target="_blank" rel="noopener noreferrer">Lapis Lazuli</a>',
+          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shichimen+Warrior" target="_blank" rel="noopener noreferrer">Shichimen Warrior</a> to get a <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lapis+Lazuli" target="_blank" rel="noopener noreferrer">Lapis Lazuli</a>',
         done: false,
         area: 'Area11_1',
       },
@@ -1023,7 +1023,7 @@ const dataObject = {
       {
         id: 'a11.1.8',
         task:
-          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank" rel="noopener noreferrer">Headless</a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Yashariku\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Yashariku\'s Spiritfall</a>',
+          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank" rel="noopener noreferrer">Headless</a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Yashariku\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Yashariku\'s Spiritfall</a>',
         done: false,
         area: 'Area11_1',
       },

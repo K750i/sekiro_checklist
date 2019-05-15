@@ -381,9 +381,770 @@ const tasks = {
       {
         id: 'gourd1',
         task:
-          'Drop from <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Naomori+Kawarada" target="_blank" rel="noopener noreferrer">General Naomori Kawarada</a>',
+          'Drop by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Naomori+Kawarada" target="_blank" rel="noopener noreferrer">General Naomori Kawarada</a>',
         done: false,
         area: 'gourd',
+      },
+      {
+        id: 'gourd2',
+        task:
+          'In the building right after the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a> in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Outskirts" target="_blank" rel="noopener noreferrer">Ashina Outskirts</a>',
+        done: false,
+        area: 'gourd',
+      },
+      {
+        id: 'gourd3',
+        task:
+          'Sold by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Battlefield+Memorial+Mob" target="_blank" rel="noopener noreferrer">Battlefield Memorial Mob</a> in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Outskirts" target="_blank" rel="noopener noreferrer">Ashina Outskirts</a>',
+        done: false,
+        area: 'gourd',
+      },
+      {
+        id: 'gourd4',
+        task:
+          'In a chest next to the Upper Tower - Antechamber Sculptor\'s Idol, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a>',
+        done: false,
+        area: 'gourd',
+      },
+      {
+        id: 'gourd5',
+        task:
+          'Sold by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fujioka+the+Info+Broker" target="_blank" rel="noopener noreferrer">Fujioka the Info Broker</a> in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dilapidated+Temple" target="_blank" rel="noopener noreferrer">Dilapidated Temple</a>',
+        done: false,
+        area: 'gourd',
+      },
+      {
+        id: 'gourd6',
+        task:
+          'In front of the immortal monk in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a>',
+        done: false,
+        area: 'gourd',
+      },
+      {
+        id: 'gourd7',
+        task:
+          'In a small hut at the beginning of <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sunken+Valley" target="_blank" rel="noopener noreferrer">Sunken Valley</a>',
+        done: false,
+        area: 'gourd',
+      },
+      {
+        id: 'gourd8',
+        task:
+          'By the large tree with white leaves in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mibu+Village" target="_blank" rel="noopener noreferrer">Mibu Village</a>',
+        done: false,
+        area: 'gourd',
+      },
+      {
+        id: 'gourd9',
+        task:
+          'In a chest inside a dark room at <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fountainhead+Palace" target="_blank" rel="noopener noreferrer">Fountainhead Palace</a>',
+        done: false,
+        area: 'gourd',
+      },
+    ],
+
+    prayerbeads: [
+      {
+        id: 'prayerbeads1',
+        task:
+          'In a chest in the attic where you meet <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tengu+of+Ashina" target="_blank" rel="noopener noreferrer">Tengu of Ashina</a> for the first time',
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads2',
+        task:
+          "Inside the hidden wall near the Hirata Audience Chamber Sculptor's Idol",
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads3',
+        task:
+          "Inside the hidden wall near the Upper Tower - Antechamber Sculptor's Idol",
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads4',
+        task:
+          'Sold by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dungeon+Memorial+Mob" target="_blank" rel="noopener noreferrer">Dungeon Memorial Mob</a>',
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads5',
+        task:
+          "In the pond near the Temple Grounds Sculptor's Idol at Senpou Temple",
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads6',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Outskirts" target="_blank" rel="noopener noreferrer">Ashina Outskirts</a> area accessible through the Under-Shrine Valley Sculptor\'s Idol',
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads7',
+        task:
+          'Chasm with mini-centipedes in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sunken+Valley" target="_blank" rel="noopener noreferrer">Sunken Valley</a>',
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads8',
+        task:
+          'The top of a large Buddha Statue in the Poison Pool, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Depths" target="_blank" rel="noopener noreferrer">Ashina Depths</a>',
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads9',
+        task:
+          'In the attic above the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Head+Priest+of+Mibu+Village" target="_blank" rel="noopener noreferrer">Head Priest of Mibu Village</a>',
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads10',
+        task:
+          'In a chest at the bottom of the lake in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mibu+Village" target="_blank" rel="noopener noreferrer">Mibu Village</a>',
+        done: false,
+        area: 'prayerbeads',
+      },
+      {
+        id: 'prayerbeads11',
+        task:
+          'At the bottom of the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Colored+Carp" target="_blank" rel="noopener noreferrer">Great Colored Carp</a> lake',
+        done: false,
+        area: 'prayerbeads',
+      },
+    ],
+
+    questitems: [
+      {
+        id: 'questitems1',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Anti-air+Deathblow+Text" target="_blank" rel="noopener noreferrer">Anti-air Deathblow Text</a> - <em>unlocks the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Anti-air+Deathblow" target="_blank" rel="noopener noreferrer">Anti-air Deathblow</a> Skill</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems2',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Aromatic+Branch" target="_blank" rel="noopener noreferrer">Aromatic Branch</a> - <em>used in the Immortal Severance Ending</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems3',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Aromatic+Flower" target="_blank" rel="noopener noreferrer">Aromatic Flower</a> - <em>used in the Purification Ending</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems4',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Esoteric+Text" target="_blank" rel="noopener noreferrer">Ashina Esoteric Text</a> - <em>unlocks the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Arts" target="_blank" rel="noopener noreferrer">Ashina Arts</a> Skill Tree</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems5',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Sake" target="_blank" rel="noopener noreferrer">Ashina Sake</a> - <em>can be given to the Sculptor, Emma or Isshin</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems6',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Black+Scroll" target="_blank" rel="noopener noreferrer">Black Scroll</a> - <em>lore reference of the Black Mortal Blade</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems7',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dancing+Dragon+Mask" target="_blank" rel="noopener noreferrer">Dancing Dragon Mask</a> - <em>convert every 5 skill points into Attack Power</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems8',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Dragon\'s+Tears" target="_blank" rel="noopener noreferrer">Divine Dragon\'s Tears</a> - <em>received from the Divine Dragon</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems9',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dosaku\'s+Note" target="_blank" rel="noopener noreferrer">Dosaku\'s Note</a> - <em>found in the room behind <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Doujun" target="_blank" rel="noopener noreferrer">Doujun</a></em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems10',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dragon\'s+Tally+Board" target="_blank" rel="noopener noreferrer">Dragon\'s Tally Board</a> - <em>increases merchants\' stocks</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems11',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dragonrot+Blood+Sample" target="_blank" rel="noopener noreferrer">Dragonrot Blood Sample</a> - <em>given to Emma to create a cure for Dragonrot</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems12',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dragonspring+Sake" target="_blank" rel="noopener noreferrer">Dragonspring Sake</a> - <em>can be given to Sculptor, Emma or Isshin</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems13',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dried+Serpent+Viscera" target="_blank" rel="noopener noreferrer">Dried Serpent Viscera</a> - <em>used in the Dragon\'s Homecoming Ending</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems14',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Father\'s+Bell+Charm" target="_blank" rel="noopener noreferrer">Father\'s Bell Charm</a> - <em>used to access Owl\'s memory in Hirata Estate</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems15',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Flame+Barrel+Memo" target="_blank" rel="noopener noreferrer">Flame Barrel Memo</a> - <em>indicates Flame Vent location</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems16',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Floating+Passage+Text" target="_blank" rel="noopener noreferrer">Floating Passage Text</a> - <em>unlocks a combat art</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems17',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fragrant+Flower+Note" target="_blank" rel="noopener noreferrer">Fragrant Flower Note</a> - <em>lore note</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems18',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fresh+Serpent+Viscera" target="_blank" rel="noopener noreferrer">Fresh Serpent Viscera</a> - <em>used in the Dragon\'s Homecoming Ending</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems19',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Frozen+Tears" target="_blank" rel="noopener noreferrer">Frozen Tears</a> - <em>used to perform the Cradling ritual</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems20',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gatehouse+Key" target="_blank" rel="noopener noreferrer">Gatehouse Key</a> - <em>unlocks the Samurai Gatehouse in Ashina Reservoir</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems21',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+White+Whisker" target="_blank" rel="noopener noreferrer">Great White Whisker</a> - <em>used to free the Great Carp Attendant</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems22',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gun+Fort+Shrine+Key" target="_blank" rel="noopener noreferrer">Gun Fort Shrine Key</a> - <em>unlocks the shrine within the Gun Fort</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems23',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Herb+Catalogue+Scrap" target="_blank" rel="noopener noreferrer">Herb Catalogue Scrap</a> - <em>lore reference for Snap Seed</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems24',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hidden+Temple+Key" target="_blank" rel="noopener noreferrer">Hidden Temple Key</a> - <em>unlocks the Hidden Temple in Hirata Estates</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems25',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Holy+Chapter:+Dragon\'s+Return" target="_blank" rel="noopener noreferrer">Holy Chapter: Dragon\'s Return</a> - <em>used in the Dragon\'s Homecoming Ending</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems26',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Holy+Chapter:+Infested" target="_blank" rel="noopener noreferrer">Holy Chapter: Infested</a> - <em>used in the Dragon\'s Homecoming Ending</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems27',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Immortal+Severance+Scrap" target="_blank" rel="noopener noreferrer">Immortal Severance Scrap</a> - <em>lore reference</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems28',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Immortal+Severance+Text" target="_blank" rel="noopener noreferrer">Immortal Severance Text</a> - <em>lore reference</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems29',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Isshin\'s+Letter" target="_blank" rel="noopener noreferrer">Isshin\'s Letter</a> - <em>lore reference</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems30',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Kuro\'s+Charm" target="_blank" rel="noopener noreferrer">Kuro\'s Charm</a> - <em>protection against damage</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems31',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Kusabimaru" target="_blank" rel="noopener noreferrer">Kusabimaru</a> - <em>Wolf\'s primary weapon</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems32',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lotus+of+the+Palace" target="_blank" rel="noopener noreferrer">Lotus of the Palace</a> - <em>used for Immortal Severance</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems33',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Monkey+Booze" target="_blank" rel="noopener noreferrer">Monkey Booze</a> - <em>can be given to the Sculptor, Emma or Isshin</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems34',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mortal+Blade" target="_blank" rel="noopener noreferrer">Mortal Blade</a> - <em>used to kill immortal enemies</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems35',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mushin+Esoteric+Text" target="_blank" rel="noopener noreferrer">Mushin Esoteric Text</a> - <em>unlocks the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mushin+Arts" target="_blank" rel="noopener noreferrer">Mushin Arts</a> Skill Tree</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems36',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Nightjar+Beacon+Memo" target="_blank" rel="noopener noreferrer">Nightjar Beacon Memo</a> - <em>explains how to get to the top of Ashina Castle</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems37',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Okami\'s+Ancient+Text" target="_blank" rel="noopener noreferrer">Okami\'s Ancient Text</a> - <em>lore reference</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems38',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ornamental+Letter" target="_blank" rel="noopener noreferrer">Ornamental Letter</a> - <em>given by Emma</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems39',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Page\'s+Diary" target="_blank" rel="noopener noreferrer">Page\'s Diary</a> - <em>lore reference</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems40',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Precious+Bait" target="_blank" rel="noopener noreferrer">Precious Bait</a> - <em>used to feed the Great Carp</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems41',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Prosthetic+Esoteric+Text" target="_blank" rel="noopener noreferrer">Prosthetic Esoteric Text</a> - <em>unlocks the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Prosthetic+Arts" target="_blank" rel="noopener noreferrer">Prosthetic Arts</a> Skill Tree</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems42',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rat+Description" target="_blank" rel="noopener noreferrer">Rat Description</a> - <em>given by Tengu of Ashina</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems43',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Recovery+Charm" target="_blank" rel="noopener noreferrer">Recovery Charm</a> - <em>cure all afflicted with Dragonrot</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems44',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Red+Carp+Eyes" target="_blank" rel="noopener noreferrer">Red Carp Eyes</a> - <em>used in Doujun\'s quest line</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems45',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Red+and+White+Pinwheel" target="_blank" rel="noopener noreferrer">Red and White Pinwheel</a> - <em>can be given to <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Kotaro" target="_blank" rel="noopener noreferrer">Kotaro</a></em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems46',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rice+for+Kuro" target="_blank" rel="noopener noreferrer">Rice for Kuro</a> - <em>used for Dragon\'s Homecoming Ending</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems47',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rotting+Prisoner\'s+Note" target="_blank" rel="noopener noreferrer">Rotting Prisoner\'s Note</a> - <em>lore reference</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems48',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sabimaru+Memo" target="_blank" rel="noopener noreferrer">Sabimaru Memo</a> - <em>indicates Sabimaru\'s location</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems49',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sakura+Droplet" target="_blank" rel="noopener noreferrer">Sakura Droplet</a> - <em>allow an additional Resurrection Node</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems50',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Secret+Passage+Key" target="_blank" rel="noopener noreferrer">Secret Passage Key</a> - <em>unlocks secret passage at the end of the moat in Ashina Reservoir</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems51',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Esoteric+Text" target="_blank" rel="noopener noreferrer">Senpou Esoteric Text</a> - <em>unlocks the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Temple+Arts" target="_blank" rel="noopener noreferrer">Temple Arts</a> Skill Tree</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems52',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shelter+Stone" target="_blank" rel="noopener noreferrer">Shelter Stone</a> - <em>used for Immortal Severance</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems53',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Esoteric+Text" target="_blank" rel="noopener noreferrer">Shinobi Esoteric Text</a> - <em>unlocks the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Arts" target="_blank" rel="noopener noreferrer">Shinobi Arts</a> Skill Tree</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems54',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Prosthetic" target="_blank" rel="noopener noreferrer">Shinobi Prosthetic</a> - <em>Wolf\'s secondary weapon</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems55',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Surgeon\'s+Bloody+Letter" target="_blank" rel="noopener noreferrer">Surgeon\'s Bloody Letter</a> - <em>given by Doujun</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems56',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Surgeon\'s+Stained+Letter" target="_blank" rel="noopener noreferrer">Surgeon\'s Stained Letter</a> - <em>given by Doujun</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems57',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Three-story+Pagoda+Memo" target="_blank" rel="noopener noreferrer">Three-Story Pagoda Memo</a> - <em>indicates <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mist+Raven" target="_blank" rel="noopener noreferrer">Mist Raven</a>\'s location</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems58',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Truly+Precious+Bait" target="_blank" rel="noopener noreferrer">Truly Precious Bait</a> - <em>used to kill the Great Carp</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems59',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Unrefined+Sake" target="_blank" rel="noopener noreferrer">Unrefined Sake</a> - <em>can be given to Sculptor, Emma or Isshin</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems60',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Valley+Apparitions+Memo" target="_blank" rel="noopener noreferrer">Valley Apparitions Memo</a> - <em>lore reference</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems61',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Water+of+the+Palace" target="_blank" rel="noopener noreferrer">Water of the Palace</a> - <em>can be given to the Noble in Mibu Village</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems62',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/White+Pinwheel" target="_blank" rel="noopener noreferrer">White Pinwheel</a> - <em>can be given to Kotaro</em>',
+        done: false,
+        area: 'questitems',
+      },
+      {
+        id: 'questitems63',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Young+Lord\'s+Bell+Charm" target="_blank" rel="noopener noreferrer">Young Lord\'s Bell Charm</a> - <em>used to access <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estates" target="_blank" rel="noopener noreferrer">Hirata Estates</a></em>',
+        done: false,
+        area: 'questitems',
+      },
+    ],
+
+    specialitems: [
+      {
+        id: 'specialitems1',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Bell+Demon" target="_blank" rel="noopener noreferrer">Bell Demon</a> - <em>remove the curse caused by ringing the Bell in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a></em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems2',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ako\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Ako\'s Spiritfall</a> - <em>increase vitality and posture damage</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems3',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gachiin\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Gachiin\'s Spiritfall</a> - <em>suppresses sound, making the user harder to detect</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems4',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gokan\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Gokan\'s Spiritfall</a> - <em>reduces posture damage</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems5',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ungo\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Ungo\'s Spiritfall</a> - <em>reduces vitality damage taken from physical attacks</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems6',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Yashariku\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Yashariku\'s Spiritfall</a> - <em>sacrifice vitality & posture to gain a large boost in attack power</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems7',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Green+Mossy+Gourd" target="_blank" rel="noopener noreferrer">Green Mossy Gourd</a> - <em>reduces poison buildup and slightly increases poison resistance</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems8',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mottled+Purple+Gourd" target="_blank" rel="noopener noreferrer">Mottled Purple Gourd</a> - <em>reduces Terror buildup and increases Terror resistance</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems9',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Withered+Red+Gourd" target="_blank" rel="noopener noreferrer">Withered Red Gourd</a> - <em>reduces Burn buildup and slightly increases Burn resistance</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems10',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Five-Color+Rice" target="_blank" rel="noopener noreferrer">Five-Color Rice</a> - <em>leave landmarks for navigating through areas</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems11',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Nightjar+Monocular" target="_blank" rel="noopener noreferrer">Nightjar Monocular</a> - <em>used to see distant objects</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems12',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ceremonial+Tanto" target="_blank" rel="noopener noreferrer">Ceremonial Tanto</a> - <em>convert vitality into <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Spirit+Emblem" target="_blank" rel="noopener noreferrer">Spirit Emblems</a></em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems13',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hidden+Tooth" target="_blank" rel="noopener noreferrer">Hidden Tooth</a> - <em>sacrifices current life for another resurrections</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems14',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Taro+Persimmon" target="_blank" rel="noopener noreferrer">Taro Persimmon</a> - <em>can be used to progress a quest for game endings</em>',
+        done: false,
+        area: 'specialitems',
+      },
+      {
+        id: 'specialitems15',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Illusive+Hall+Bell" target="_blank" rel="noopener noreferrer">Illusion Hall Bell</a> - <em>reset the stage for the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Folding+Screen+Monkeys" target="_blank" rel="noopener noreferrer">Folding Screen Monkey</a> fight</em>',
+        done: false,
+        area: 'specialitems',
+      },
+    ],
+
+    prosthetics: [
+      {
+        id: 'prosthetics1',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Abduction" target="_blank" rel="noopener noreferrer">Divine Abduction</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics2',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Finger+Whistle" target="_blank" rel="noopener noreferrer">Finger Whistle</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics3',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Flame+Vent" target="_blank" rel="noopener noreferrer">Flame Vent</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics4',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Axe" target="_blank" rel="noopener noreferrer">Loaded Axe</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics5',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Shuriken" target="_blank" rel="noopener noreferrer">Loaded Shuriken</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics6',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Spear" target="_blank" rel="noopener noreferrer">Loaded Spear</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics7',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Loaded+Umbrella" target="_blank" rel="noopener noreferrer">Loaded Umbrella</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics8',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mist+Raven" target="_blank" rel="noopener noreferrer">Mist Raven</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics9',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sabimaru" target="_blank" rel="noopener noreferrer">Sabimaru</a>',
+        done: false,
+        area: 'prosthetics',
+      },
+      {
+        id: 'prosthetics10',
+        task:
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Firecracker" target="_blank" rel="noopener noreferrer">Shinobi Firecracker</a>',
+        done: false,
+        area: 'prosthetics',
       },
     ],
   },
@@ -402,8 +1163,28 @@ export const sections = [
   },
   {
     id: 'gourd',
-    name: 'Gourd Seeds Location',
+    name: 'Gourd Seeds Locations',
     link: '#gourd',
+  },
+  {
+    id: 'prayerbeads',
+    name: 'Lootable Prayer Beads Locations',
+    link: '#prayerbeads',
+  },
+  {
+    id: 'questitems',
+    name: 'Quest/Key Items',
+    link: '#questitems',
+  },
+  {
+    id: 'specialitems',
+    name: 'Special Items/Consumables',
+    link: '#specialitems',
+  },
+  {
+    id: 'prosthetics',
+    name: 'Prosthetic Tools',
+    link: '#prosthetics',
   },
 ];
 

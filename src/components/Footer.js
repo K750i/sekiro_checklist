@@ -24,7 +24,7 @@ function Footer() {
     <footer style={footerStyle}>
       <div style={divStyle}>
         Made with <FontAwesomeIcon icon={faReact} /> React and{' '}
-        <FontAwesomeIcon icon={faBootstrap} /> Bootstrap
+        <FontAwesomeIcon icon={faBootstrap} /> React-Bootstrap
       </div>
     </footer>
   );
