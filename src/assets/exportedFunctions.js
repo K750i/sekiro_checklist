@@ -81,7 +81,6 @@ export function loadMergeData(parsedSourceObj, checklistName, profileName) {
 
 export function collapseSection(collapseObj, profile, isOpenObj) {
   const temp = {...collapseObj};
-  console.log(temp);
 
   temp[profile] = {
     ...collapseObj[profile],

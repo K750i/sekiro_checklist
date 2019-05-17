@@ -45,7 +45,6 @@ export default class App extends Component {
         playthroughCollapse: localStorage.getItem('collapse1')
           ? JSON.parse(localStorage.getItem('collapse1'))
           : {},
-        // all task
         alltaskData: loadMergeData(
           JSON.parse(alltaskStr).default,
           'alltaskChecklist',
@@ -56,7 +55,6 @@ export default class App extends Component {
         alltaskCollapse: localStorage.getItem('collapse2')
           ? JSON.parse(localStorage.getItem('collapse2'))
           : {},
-        // all task
       };
     } else {
       this.state = {
@@ -65,12 +63,10 @@ export default class App extends Component {
         completionStatus: {},
         areas: areas,
         playthroughCollapse: {},
-        // all task
         alltaskData: JSON.parse(alltaskStr).default,
         alltaskCompletionStatus: {},
         sections: sections,
         alltaskCollapse: {},
-        // all task
       };
     }
   }
@@ -102,9 +98,7 @@ export default class App extends Component {
     this.setState(
       {
         data: JSON.parse(playthroughStr).default,
-        // all task
         alltaskData: JSON.parse(alltaskStr).default,
-        // all task
         currentProfile: name,
       },
       () => {
@@ -119,7 +113,6 @@ export default class App extends Component {
             ),
           ),
         );
-        // all task
         localStorage.setItem(
           'alltaskChecklist',
           JSON.stringify(
@@ -134,14 +127,12 @@ export default class App extends Component {
         this.setState(
           this.updateTaskCounter(this.state.data, 'completionStatus'),
         );
-        // all task
         this.setState(
           this.updateTaskCounter(
             this.state.alltaskData,
             'alltaskCompletionStatus',
           ),
         );
-        // all task
         this.forceUpdate();
       },
     );
@@ -153,25 +144,33 @@ export default class App extends Component {
     );
     const alltaskList = JSON.parse(localStorage.getItem('alltaskChecklist'));
     const collapse1Obj = JSON.parse(localStorage.getItem('collapse1'));
+    const collapse2Obj = JSON.parse(localStorage.getItem('collapse2'));
 
-    if (!playthroughList || !alltaskList) return;
+    if (playthroughList) {
+      delete playthroughList[this.state.currentProfile];
+      localStorage.setItem(
+        'playthroughChecklist',
+        JSON.stringify(playthroughList),
+      );
+    }
 
-    delete playthroughList[this.state.currentProfile];
-    localStorage.setItem(
-      'playthroughChecklist',
-      JSON.stringify(playthroughList),
-    );
-
-    delete alltaskList[this.state.currentProfile];
-    localStorage.setItem('alltaskChecklist', JSON.stringify(alltaskList));
+    if (alltaskList) {
+      delete alltaskList[this.state.currentProfile];
+      localStorage.setItem('alltaskChecklist', JSON.stringify(alltaskList));
+    }
 
     if (collapse1Obj) {
       delete collapse1Obj[this.state.currentProfile];
       localStorage.setItem('collapse1', JSON.stringify(collapse1Obj));
     }
 
+    if (collapse2Obj) {
+      delete collapse2Obj[this.state.currentProfile];
+      localStorage.setItem('collapse2', JSON.stringify(collapse2Obj));
+    }
+
     // if there is remaining profile, load the last one from the list
-    const list = Object.keys(playthroughList);
+    const list = Object.keys(playthroughList || {});
     if (list.length >= 1) {
       this.changeProfile(list[list.length - 1]);
     } else {
@@ -181,13 +180,12 @@ export default class App extends Component {
           data: JSON.parse(playthroughStr).default,
           completionStatus: {},
           areas: areas,
-          // all task
           alltaskData: JSON.parse(alltaskStr).default,
           alltaskCompletionStatus: {},
           sections: sections,
-          // all task
           currentProfile: 'default',
           playthroughCollapse: {},
+          alltaskCollapse: {},
         },
         () => {
           this.persistState(this.state);
@@ -205,13 +203,11 @@ export default class App extends Component {
           'playthroughChecklist',
           name,
         ),
-        // all task
         alltaskData: loadMergeData(
           JSON.parse(alltaskStr).default,
           'alltaskChecklist',
           name,
         ),
-        // all task
         currentProfile: name,
         playthroughCollapse: JSON.parse(localStorage.getItem('collapse1')),
       },
@@ -219,14 +215,12 @@ export default class App extends Component {
         this.setState(
           this.updateTaskCounter(this.state.data, 'completionStatus'),
         );
-        // all task
         this.setState(
           this.updateTaskCounter(
             this.state.alltaskData,
             'alltaskCompletionStatus',
           ),
         );
-        // all task
         this.persistState(this.state);
       },
     );
@@ -264,10 +258,14 @@ export default class App extends Component {
 
   componentDidMount() {
     this.setState(this.updateTaskCounter(this.state.data, 'completionStatus'));
-    // all task
     this.setState(
       this.updateTaskCounter(this.state.alltaskData, 'alltaskCompletionStatus'),
     );
+    document.title = `Sekiro Checklist - ${this.state.currentProfile}`;
+  }
+
+  componentDidUpdate() {
+    document.title = `Sekiro Checklist - ${this.state.currentProfile}`;
   }
 
   render() {
@@ -300,7 +298,6 @@ export default class App extends Component {
       );
     });
 
-    // All task
     const sectionList = this.state.sections.map(area => {
       return (
         <IndexArea
@@ -327,8 +324,6 @@ export default class App extends Component {
         />
       );
     });
-
-    // All task
 
     return (
       <section id="container">

@@ -20,14 +20,14 @@ function Jumbo({areaList, status}) {
       <Container>
         <Row>
           <Col>
-            <h2>Progression Checklist for Sekiro&trade;: Shadows Die Twice</h2>
+            <h2>Progression Checklist for Sekiro&trade; Shadows Die Twice</h2>
           </Col>
         </Row>
         <Row>
           <Col>
             <p>
               This is a playthrough or progression checklist for Sekiro&trade;
-              Shadows Die Twice. This checklist is roughly based on{' '}
+              Shadows Die Twice. It is roughly based on{' '}
               <a
                 href="https://sekiroshadowsdietwice.wiki.fextralife.com/Game+Progress+Route"
                 target="_blank"
@@ -35,8 +35,8 @@ function Jumbo({areaList, status}) {
                 Fextralife's Game Progress Route
               </a>{' '}
               which presents a logical progression path through the game. Please
-              note that it does not take into account all NPCs questlines or its
-              divergence.
+              note that it does not take into account all NPCs questlines or any
+              of its path variations.
             </p>
           </Col>
         </Row>
@@ -53,7 +53,7 @@ function Jumbo({areaList, status}) {
         <Row>
           <Col>
             <h4>
-              Areas Index <AreaCompletionTracker status={overallStatus} />
+              Areas List <AreaCompletionTracker status={overallStatus} />
             </h4>
             <ListGroup>{areaList}</ListGroup>
           </Col>

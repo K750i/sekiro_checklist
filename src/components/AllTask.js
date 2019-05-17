@@ -27,8 +27,9 @@ function AllTask({sectionList, alltaskSection, status}) {
           <Row>
             <Col>
               <p>
-                Track the status of completion for all major tasks with the
-                game.
+                This page tracks the status of completion for all major tasks
+                with the game. You can use it while playing Sekiro to make sure
+                you don't miss an item, tools or bosses.
               </p>
             </Col>
           </Row>
