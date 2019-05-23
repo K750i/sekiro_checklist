@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import NavigationBar from './components/NavigationBar';
 import Main from './components/Main';
+import ScrollToTop from './components/ScrollToTop';
 import AllTask from './components/AllTask';
 import About from './components/About';
 import IndexArea from './components/IndexArea';
@@ -342,34 +343,36 @@ export default class App extends Component {
             changeProfile={this.changeProfile}
             deleteProfile={this.deleteProfile}
           />
-          <Container id="body">
-            <Switch>
-              <Route
-                exact
-                path="/"
-                render={props => (
-                  <Main
-                    areaList={areaList}
-                    areaSection={areaSection}
-                    completionStatus={this.state.completionStatus}
-                    {...props}
-                  />
-                )}
-              />
-              <Route
-                path="/checklist"
-                render={props => (
-                  <AllTask
-                    sectionList={sectionList}
-                    alltaskSection={alltaskSection}
-                    status={this.state.alltaskCompletionStatus}
-                    {...props}
-                  />
-                )}
-              />
-              <Route path="/about" component={About} />
-            </Switch>
-          </Container>
+          <ScrollToTop>
+            <Container id="body">
+              <Switch>
+                <Route
+                  exact
+                  path="/"
+                  render={props => (
+                    <Main
+                      areaList={areaList}
+                      areaSection={areaSection}
+                      completionStatus={this.state.completionStatus}
+                      {...props}
+                    />
+                  )}
+                />
+                <Route
+                  path="/checklist"
+                  render={props => (
+                    <AllTask
+                      sectionList={sectionList}
+                      alltaskSection={alltaskSection}
+                      status={this.state.alltaskCompletionStatus}
+                      {...props}
+                    />
+                  )}
+                />
+                <Route path="/about" component={About} />
+              </Switch>
+            </Container>
+          </ScrollToTop>
         </Router>
         <Footer />
         <div className="fixed-anchor">
