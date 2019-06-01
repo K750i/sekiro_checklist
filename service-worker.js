@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https//K750i.github.io/sekiro_checklist/precache-manifest.82db6a4fa4c1c2c6fa25fe9393feca78.js"
+  "/sekiro_checklist/precache-manifest.e2ce83c4223425e92dc3dd8f021ab1ef.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https//K750i.github.io/sekiro_checklist/index.html", {
+workbox.routing.registerNavigationRoute("/sekiro_checklist/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
