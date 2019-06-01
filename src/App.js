@@ -328,7 +328,7 @@ export default class App extends Component {
 
     return (
       <section id="container">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <NavigationBar
             id="top"
             profiles={
