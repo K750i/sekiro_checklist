@@ -27,16 +27,20 @@ function Jumbo({areaList, status}) {
           <Col>
             <p>
               This is a playthrough or progression checklist for Sekiro&trade;
-              Shadows Die Twice. It is roughly based on{' '}
+              Shadows Die Twice.
+            </p>
+            <p>
+              It is loosely based on{' '}
               <a
                 href="https://sekiroshadowsdietwice.wiki.fextralife.com/Game+Progress+Route"
                 target="_blank"
                 rel="noopener noreferrer">
                 Fextralife's Game Progress Route
               </a>{' '}
-              which presents a logical progression path through the game. Please
-              note that it does not take into account all NPCs questlines or any
-              of its path variations.
+              which presents a logical progression path through the game for new
+              players (veteran obviously can already follow their own preferred
+              path). Please note that it does not attempt to follow all NPCs
+              questlines or any of its path variations.
             </p>
           </Col>
         </Row>

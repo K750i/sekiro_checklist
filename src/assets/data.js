@@ -48,7 +48,7 @@ const dataObject = {
       {
         id: 'a2.1.3',
         task:
-          'Rest at the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sculptor\'s+Idol" target="_blank" rel="noopener noreferrer">Sculptor\'s Idol<a>',
+          'Rest and activate the first <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sculptor\'s+Idol" target="_blank" rel="noopener noreferrer">Sculptor\'s Idol<a> outside the temple',
         done: false,
         area: 'Area2_1',
       },
@@ -218,65 +218,72 @@ const dataObject = {
       {
         id: 'a3.2.4',
         task:
-          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank" rel="noopener noreferrer">Headless</a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ako\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Ako\'s Spiritfall</a> and ring the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Demon+Bell" target="_blank" rel="noopener noreferrer">Demon Bell</a>',
+          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless" target="_blank" rel="noopener noreferrer">Headless</a> to obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ako\'s+Spiritfall" target="_blank" rel="noopener noreferrer">Ako\'s Spiritfall</a>',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.5',
         task:
-          'Head past Headless and wind up on the other side to open the door for a shortcut',
+          'Go past Headless and ring the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Demon+Bell" target="_blank" rel="noopener noreferrer">Demon Bell</a>',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.6',
-        task: 'Find your second Remnant',
+        task:
+          'Head past Headless and wind up on the other side to open the door for a shortcut',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.7',
-        task:
-          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gyoubu+Oniwa" target="_blank" rel="noopener noreferrer">Gyoubu Masataka Oniwa</a> and obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mechanical+Barrel" target="_blank" rel="noopener noreferrer">Mechanical Barrel</a> which allows Prosthetic Tools Upgrade as well as <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Gyoubu+Oniwa" target="_blank" rel="noopener noreferrer">Memory: Gyoubu Oniwa</a>',
+        task: 'Find your second Remnant',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.8',
         task:
-          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Battlefield+Memorial+Mob" target="_blank" rel="noopener noreferrer">Battlefield Memorial Mob</a> and purchase a Gourd Seed and Robert\'s Firecrackers (if not in possession)',
+          'Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gyoubu+Oniwa" target="_blank" rel="noopener noreferrer">Gyoubu Masataka Oniwa</a> and obtain the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mechanical+Barrel" target="_blank" rel="noopener noreferrer">Mechanical Barrel</a> which allows Prosthetic Tools Upgrade as well as <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Memory:+Gyoubu+Oniwa" target="_blank" rel="noopener noreferrer">Memory: Gyoubu Oniwa</a>',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.9',
         task:
-          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tengu+of+Ashina" target="_blank" rel="noopener noreferrer">Tengu of Ashina</a> and accept his quest to kill some <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rat+Description" target="_blank" rel="noopener noreferrer">Rats</a>',
+          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Battlefield+Memorial+Mob" target="_blank" rel="noopener noreferrer">Battlefield Memorial Mob</a> and purchase a Gourd Seed and Robert\'s Firecrackers (if not in possession)',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.10',
-        task: 'Head on upstairs to obtain a Prayer Bead',
+        task:
+          'Find <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tengu+of+Ashina" target="_blank" rel="noopener noreferrer">Tengu of Ashina</a> and accept his quest to kill some <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Rat+Description" target="_blank" rel="noopener noreferrer">Rats</a>',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.11',
-        task: 'Go past Tengu of Ashina and open the door for a shortcut',
+        task: 'Head on upstairs to obtain a Prayer Bead',
         done: false,
         area: 'Area3_2',
       },
       {
         id: 'a3.2.12',
+        task: 'Go past Tengu of Ashina and open the door for a shortcut',
+        done: false,
+        area: 'Area3_2',
+      },
+      {
+        id: 'a3.2.13',
         task:
           'Return to Tengu of Ashina to get the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Esoteric+Text" target="_blank" rel="noopener noreferrer">Ashina Esoteric Text</a> to unlock the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Arts" target="_blank" rel="noopener noreferrer">Ashina Arts</a> skill tree',
         done: false,
         area: 'Area3_2',
       },
       {
-        id: 'a3.2.13',
+        id: 'a3.2.14',
         task:
           'Defeat the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Blazing+Bull" target="_blank" rel="noopener noreferrer">Blazing Bull</a> to get another Prayer Bead as well as the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Medicine+Rank+2" target="_blank" rel="noopener noreferrer">Shinobi Medicine Rank 2</a> skill',
         done: false,
@@ -478,7 +485,7 @@ const dataObject = {
       {
         id: 'a6.1.3',
         task:
-          '(Optional) Defeat the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shichimen+Warrior" target="_blank" rel="noopener noreferrer">Shichimen Warrior</a> to acquire the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ceremonial+Tanto" target="_blank" rel="noopener noreferrer">Ceremonial Tanto</a>',
+          '(Optional) Defeat <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shichimen+Warrior" target="_blank" rel="noopener noreferrer">Shichimen Warrior</a> to acquire the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ceremonial+Tanto" target="_blank" rel="noopener noreferrer">Ceremonial Tanto</a>',
         done: false,
         area: 'Area6_1',
       },
@@ -587,6 +594,13 @@ const dataObject = {
         id: 'a5.2.3',
         task:
           'Head back to Kuro and pick up the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gun+Fort+Shrine+Key" target="_blank" rel="noopener noreferrer">Gun Fort Shrine Key</a> in the library which is now opened. Talk to Kuro and exhaust his dialogues again',
+        done: false,
+        area: 'Area5_2',
+      },
+      {
+        id: 'a5.2.4',
+        task:
+          'Give <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sakura+Droplet" target="_blank" rel="noopener noreferrer">Sakura Droplet</a> to Kuro to gain an additional Resurrection Node (can also be given to the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Child+of+Rejuvenation" target="_blank" rel="noopener noreferrer">Divine Child of Rejuvenation</a> at Inner Sanctum)',
         done: false,
         area: 'Area5_2',
       },

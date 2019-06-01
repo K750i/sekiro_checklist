@@ -21,7 +21,7 @@ function AllTask({sectionList, alltaskSection, status}) {
         <Container>
           <Row>
             <Col>
-              <h2>All Completion Checklist</h2>
+              <h2>Full Completion Checklist</h2>
             </Col>
           </Row>
           <Row>
