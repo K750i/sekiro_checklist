@@ -39,7 +39,7 @@ const tasks = {
       {
         id: 'boss6',
         task:
-          '<span role="img" aria-label="emoji">⚔️⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless+Ape" target="_blank" rel="noopener noreferrer">Headless Ape</a> - <em>after the poison pool guarded by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirahagi" target="_blank" rel="noopener noreferrer">Snake Eyes Shirahagi</a></em>',
+          '<span role="img" aria-label="emoji">✱✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Headless+Ape" target="_blank" rel="noopener noreferrer">Headless Ape</a> - <em>after the poison pool guarded by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirahagi" target="_blank" rel="noopener noreferrer">Snake Eyes Shirahagi</a></em>',
         done: false,
         area: 'bosses',
       },
@@ -81,7 +81,7 @@ const tasks = {
       {
         id: 'boss12',
         task:
-          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Dragon" target="_blank" rel="noopener noreferrer">Divine Dragon</a> - <em>can be reach by praying at the altar following the Sanctuary Sculptor\'s Idol, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fountainhead+Palace" target="_blank" rel="noopener noreferrer">Fountainhead Palace</a></em>',
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Divine+Dragon" target="_blank" rel="noopener noreferrer">Divine Dragon</a> - <em>can be reached by praying at the altar following the Sanctuary Sculptor\'s Idol, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fountainhead+Palace" target="_blank" rel="noopener noreferrer">Fountainhead Palace</a></em>',
         done: false,
         area: 'bosses',
       },
@@ -112,119 +112,119 @@ const tasks = {
       {
         id: 'miniboss2',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Naomori+Kawarada" target="_blank" rel="noopener noreferrer">General Naomori Kawarada</a> - <em>near the Outskirts Wall - Gate Path Sculptor\'s Idol</em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Naomori+Kawarada" target="_blank" rel="noopener noreferrer">General Naomori Kawarada</a> - <em>near the Outskirts Wall - Gate Path Sculptor\'s Idol</em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss3',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Hunter+Enshin+of+Misen" target="_blank" rel="noopener noreferrer">Shinobi Hunter Enshin of Misen</a> - <em>past the bridge guarded by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Bandit+%28Katana+and+Shield%29" target="_blank" rel="noopener noreferrer">Bandit with Shield</a> in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Hunter+Enshin+of+Misen" target="_blank" rel="noopener noreferrer">Shinobi Hunter Enshin of Misen</a> - <em>past the bridge guarded by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Bandit+%28Katana+and+Shield%29" target="_blank" rel="noopener noreferrer">Bandit with Shield</a> in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss4',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a> - <em>(1st encounter) after the Outskirts Wall - Stairway Idol, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Outskirts" target="_blank" rel="noopener noreferrer">Ashina Outskirts</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a> - <em>(1st encounter) after the Outskirts Wall - Stairway Idol, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Outskirts" target="_blank" rel="noopener noreferrer">Ashina Outskirts</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss5',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Tenzen+Yamauchi" target="_blank" rel="noopener noreferrer">General Tenzen Yamauchi</a> - <em>in the courtyard after the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Tenzen+Yamauchi" target="_blank" rel="noopener noreferrer">General Tenzen Yamauchi</a> - <em>in the courtyard after the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss6',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Blazing+Bull" target="_blank" rel="noopener noreferrer">Blazing Bull</a> - <em>just before reaching <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Blazing+Bull" target="_blank" rel="noopener noreferrer">Blazing Bull</a> - <em>just before reaching <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss7',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Kuranosuke+Matsumoto" target="_blank" rel="noopener noreferrer">General Kuranosuke Matsumoto</a> - <em>up the stairs of Ashina Castle Sculptor\'s Idol</em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/General+Kuranosuke+Matsumoto" target="_blank" rel="noopener noreferrer">General Kuranosuke Matsumoto</a> - <em>up the stairs of Ashina Castle Sculptor\'s Idol</em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss8',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Elite+-+Jinusuke+Saze" target="_blank" rel="noopener noreferrer">Ashina Elite - Jinsuke Saze</a> - <em>found in the Dojo, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Elite+-+Jinusuke+Saze" target="_blank" rel="noopener noreferrer">Ashina Elite - Jinsuke Saze</a> - <em>found in the Dojo, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss9',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Juzou+the+Drunkard" target="_blank" rel="noopener noreferrer">Juzou the Drunkard</a> - <em>(1st encounter) along the Main Hall Sculptor\'s Idol, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Juzou+the+Drunkard" target="_blank" rel="noopener noreferrer">Juzou the Drunkard</a> - <em>(1st encounter) along the Main Hall Sculptor\'s Idol, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss10',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Seven+Ashina+Spears+-+Shikibu+Toshikatsu+Yamauchi" target="_blank" rel="noopener noreferrer">Seven Ashina Spears - Shikibu Toshikatsu Yamauchi</a> - <em>in front of the Moon-View Tower, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Reservoir" target="_blank" rel="noopener noreferrer">Ashina Reservoir</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Seven+Ashina+Spears+-+Shikibu+Toshikatsu+Yamauchi" target="_blank" rel="noopener noreferrer">Seven Ashina Spears - Shikibu Toshikatsu Yamauchi</a> - <em>in front of the Moon-View Tower, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Reservoir" target="_blank" rel="noopener noreferrer">Ashina Reservoir</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss11',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Longswordsman" target="_blank" rel="noopener noreferrer">Lone Shadow Longswordsman</a> - <em>in the well at <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Reservoir" target="_blank" rel="noopener noreferrer">Ashina Reservoir</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Longswordsman" target="_blank" rel="noopener noreferrer">Lone Shadow Longswordsman</a> - <em>in the well at <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Reservoir" target="_blank" rel="noopener noreferrer">Ashina Reservoir</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss12',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Armored+Warrior" target="_blank" rel="noopener noreferrer">Armored Warrior</a> - <em>enclosed wooden bridge, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Armored+Warrior" target="_blank" rel="noopener noreferrer">Armored Warrior</a> - <em>enclosed wooden bridge, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss13',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Long+Arm+Centipede+Sen-Un" target="_blank" rel="noopener noreferrer">Long-arm Centipede Sen\'un</a> - <em>temple near a large bonfire around the Temple Grounds Idol at <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Long+Arm+Centipede+Sen-Un" target="_blank" rel="noopener noreferrer">Long-arm Centipede Sen\'un</a> - <em>temple near a large bonfire around the Temple Grounds Idol at <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss14',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirafuji" target="_blank" rel="noopener noreferrer">Snake Eyes Shirafuji</a> - <em>on a platform ahead of the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sunken+Valley" target="_blank" rel="noopener noreferrer">Sunken Valley</a> Sculptor\'s Idol</em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirafuji" target="_blank" rel="noopener noreferrer">Snake Eyes Shirafuji</a> - <em>on a platform ahead of the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sunken+Valley" target="_blank" rel="noopener noreferrer">Sunken Valley</a> Sculptor\'s Idol</em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss15',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Long-arm+Centipede+Giraffe" target="_blank" rel="noopener noreferrer">Long-arm Centipede Giraffe</a> - <em>right after the Gun Fort Sculptor\'s Idol',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Long-arm+Centipede+Giraffe" target="_blank" rel="noopener noreferrer">Long-arm Centipede Giraffe</a> - <em>right after the Gun Fort Sculptor\'s Idol',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss16',
         task:
-          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Serpent" target="_blank" rel="noopener noreferrer">Great Serpent</a> - <em>can be reach by grappling across a valley from <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a></em>',
+          '<a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Great+Serpent" target="_blank" rel="noopener noreferrer">Great Serpent</a> - <em>can be reached by grappling across a valley from <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Senpou+Temple,+Mt.+Kongo" target="_blank" rel="noopener noreferrer">Senpou Temple</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss17',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirahagi" target="_blank" rel="noopener noreferrer">Snake Eyes Shirahagi</a> - <em>poison pool, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Depths" target="_blank" rel="noopener noreferrer">Ashina Depths</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirahagi" target="_blank" rel="noopener noreferrer">Snake Eyes Shirahagi</a> - <em>poison pool, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Depths" target="_blank" rel="noopener noreferrer">Ashina Depths</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss18',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tokujiro+the+Glutton" target="_blank" rel="noopener noreferrer">Tokujiro the Glutton</a> - <em>area leading up from branches after the Hidden Forest Idol in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Depths" target="_blank" rel="noopener noreferrer">Ashina Depths</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tokujiro+the+Glutton" target="_blank" rel="noopener noreferrer">Tokujiro the Glutton</a> - <em>area leading up from branches after the Hidden Forest Idol in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Depths" target="_blank" rel="noopener noreferrer">Ashina Depths</a></em>',
         done: false,
         area: 'minibosses',
       },
@@ -238,56 +238,56 @@ const tasks = {
       {
         id: 'miniboss20',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/O\'rin+of+the+Water" target="_blank" rel="noopener noreferrer">O\'rin of the Water</a> - <em>after the large blossom tree up the path, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mibu+Village" target="_blank" rel="noopener noreferrer">Mibu Village</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/O\'rin+of+the+Water" target="_blank" rel="noopener noreferrer">O\'rin of the Water</a> - <em>after the large blossom tree up the path, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Mibu+Village" target="_blank" rel="noopener noreferrer">Mibu Village</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss21',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a> - <em>(2nd encounter) inside <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="_blank" rel="noopener noreferrer">Chained Ogre</a> - <em>(2nd encounter) inside <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss22',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Masanaga+the+Spear-bearer" target="_blank" rel="noopener noreferrer">Lone Shadow Masanaga the Spear-Bearer</a> - <em>(1st encounter) the Serpent Shrine area',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Masanaga+the+Spear-bearer" target="_blank" rel="noopener noreferrer">Lone Shadow Masanaga the Spear-Bearer</a> - <em>(1st encounter) the Serpent Shrine area',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss23',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Vilehand" target="_blank" rel="noopener noreferrer">Lone Shadow Vilehand</a> - <em>in the Ashina Dojo, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Vilehand" target="_blank" rel="noopener noreferrer">Lone Shadow Vilehand</a> - <em>in the Ashina Dojo, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss24',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Masanaga+the+Spear-bearer" target="_blank" rel="noopener noreferrer">Lone Shadow Masanaga the Spear-Bearer</a> - <em>(2nd encounter) burning building, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Lone+Shadow+Masanaga+the+Spear-bearer" target="_blank" rel="noopener noreferrer">Lone Shadow Masanaga the Spear-Bearer</a> - <em>(2nd encounter) burning building, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss25',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Juzou+the+Drunkard" target="_blank" rel="noopener noreferrer">Juzou the Drunkard</a> - <em>(2nd encounter) same area as the 1st encounter, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a> in a different memory</em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Juzou+the+Drunkard" target="_blank" rel="noopener noreferrer">Juzou the Drunkard</a> - <em>(2nd encounter) same area as the 1st encounter, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Hirata+Estate" target="_blank" rel="noopener noreferrer">Hirata Estate</a> in a different memory</em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss26',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sakura+Bull+of+the+Palace" target="_blank" rel="noopener noreferrer">Sakura Bull of the Palace</a> - <em>Fountainhead Temple area</em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sakura+Bull+of+the+Palace" target="_blank" rel="noopener noreferrer">Sakura Bull of the Palace</a> - <em>Fountainhead Temple area</em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss27',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Okami+Leader+Shizu" target="_blank" rel="noopener noreferrer">Okami Leader Shizu</a> - <em>at the end of a branch of a large tree in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fountainhead+Palace" target="_blank" rel="noopener noreferrer">Fountainhead Palace</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Okami+Leader+Shizu" target="_blank" rel="noopener noreferrer">Okami Leader Shizu</a> - <em>at the end of a branch of a large tree in <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Fountainhead+Palace" target="_blank" rel="noopener noreferrer">Fountainhead Palace</a></em>',
         done: false,
         area: 'minibosses',
       },
@@ -301,21 +301,21 @@ const tasks = {
       {
         id: 'miniboss29',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Elite+Ujinari+Mizuo" target="_blank" rel="noopener noreferrer">Ashina Elite - Ujinari Mizuo</a> - <em>hidden dojo below Isshin Ashina\'s watchtower, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Elite+Ujinari+Mizuo" target="_blank" rel="noopener noreferrer">Ashina Elite - Ujinari Mizuo</a> - <em>hidden dojo below Isshin Ashina\'s watchtower, <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a></em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss30',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shigekichi+of+the+Red+Guard" target="_blank" rel="noopener noreferrer">Shigekichi of the Red Guard</a> - <em>after the Ashina Outskirts - Stairway Idol after <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a> has been invaded for the second time</em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shigekichi+of+the+Red+Guard" target="_blank" rel="noopener noreferrer">Shigekichi of the Red Guard</a> - <em>after the Ashina Outskirts - Stairway Idol after <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Castle" target="_blank" rel="noopener noreferrer">Ashina Castle</a> has been invaded for the second time</em>',
         done: false,
         area: 'minibosses',
       },
       {
         id: 'miniboss31',
         task:
-          '<span role="img" aria-label="emoji">⚔️</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Seven+Ashina+Spears+-+Shume+Masaji+Oniwa" target="_blank" rel="noopener noreferrer">Seven Ashina Spears - Shume Masaji Oniwa</a> - <em>right after the Ashina Reservoir Sculptor\'s Idol</em>',
+          '<span role="img" aria-label="emoji">✱</span> <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Seven+Ashina+Spears+-+Shume+Masaji+Oniwa" target="_blank" rel="noopener noreferrer">Seven Ashina Spears - Shume Masaji Oniwa</a> - <em>right after the Ashina Reservoir Sculptor\'s Idol</em>',
         done: false,
         area: 'minibosses',
       },
