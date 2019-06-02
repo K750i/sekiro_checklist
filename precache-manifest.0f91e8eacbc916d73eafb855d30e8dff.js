@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/sekiro_checklist/static/js/runtime~main.63429521.js"
   },
   {
-    "revision": "b5664f84c4bd2727035c",
-    "url": "/sekiro_checklist/static/js/main.fa684ddd.chunk.js"
+    "revision": "d6c11acb51b0d96bfa4a",
+    "url": "/sekiro_checklist/static/js/main.c05ad4f7.chunk.js"
   },
   {
     "revision": "5c9fec42ec6390c9f8c5",
     "url": "/sekiro_checklist/static/js/2.05f7af88.chunk.js"
   },
   {
-    "revision": "b5664f84c4bd2727035c",
+    "revision": "d6c11acb51b0d96bfa4a",
     "url": "/sekiro_checklist/static/css/main.76471df3.chunk.css"
   },
   {
-    "revision": "3210b5d27e2f9de5b0cc195d52bd54ce",
+    "revision": "165be3e919402c30066b87d91c0440a7",
     "url": "/sekiro_checklist/index.html"
   }
 ];

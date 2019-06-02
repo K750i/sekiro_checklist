@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sekiro_checklist/precache-manifest.3ed42de3c5ce599ff085b7acda97f501.js"
+  "/sekiro_checklist/precache-manifest.0f91e8eacbc916d73eafb855d30e8dff.js"
 );
 
 workbox.clientsClaim();
